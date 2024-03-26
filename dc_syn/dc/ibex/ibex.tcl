@@ -18,7 +18,7 @@ source -verbose "../common_scripts/common.tcl"
 
 #find ~/ibex/rtl/ -name "*.sv" | xargs echo read_verilog
 
-set files [glob ~/ibex_/ibex/rtl/*.sv]
+set files [glob ../../../rtl/*.sv]
 #cd ~/ibex/rtl
 #read_sverilog ibex_alu.sv
 #cd ~/ibex_syn/dc/ibex
