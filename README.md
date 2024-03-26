@@ -1,3 +1,11 @@
+# IBEX Physical Design
+This is the project of IBEX physical design, we will do the synthesis and apr to the ibex core.
+
+Synthesis flow: dc_syn
+note: Please change the file name of your file to be ibex_, or change the absolu path to relative path in the dc_syn/common_scripts "search path"
+
+##Author: Yuqi Lin
+
 [![Build Status](https://dev.azure.com/lowrisc/ibex/_apis/build/status/lowRISC.ibex?branchName=master)](https://dev.azure.com/lowrisc/ibex/_build/latest?definitionId=3&branchName=master)
 
 # Ibex RISC-V Core
