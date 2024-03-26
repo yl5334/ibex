@@ -1,0 +1,56 @@
+Warning: Design 'ibex_top' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : ibex_top
+Version: O-2018.06-SP5-1
+Date   : Tue Mar 26 16:49:28 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+instr_addr_o[21] (out)              3.88 f            3.89         0.01
+instr_addr_o[29] (out)              3.88 f            3.89         0.01
+instr_addr_o[25] (out)              3.88 f            3.89         0.01
+instr_addr_o[27] (out)              3.88 f            3.89         0.01
+instr_addr_o[16] (out)              3.88 r            3.89         0.01
+instr_addr_o[11] (out)              3.84 f            3.89         0.05
+instr_addr_o[23] (out)              3.84 f            3.89         0.05
+instr_addr_o[17] (out)              3.84 f            3.89         0.05
+instr_addr_o[15] (out)              3.84 f            3.89         0.05
+instr_addr_o[19] (out)              3.84 f            3.89         0.05
+instr_addr_o[22] (out)              3.71 r            3.89         0.18
+instr_addr_o[12] (out)              3.70 f            3.89         0.19
+instr_addr_o[28] (out)              3.68 f            3.89         0.21
+instr_addr_o[24] (out)              3.67 r            3.89         0.22
+instr_addr_o[26] (out)              3.67 r            3.89         0.22
+instr_addr_o[3] (out)               3.67 f            3.89         0.22
+instr_addr_o[9] (out)               3.67 f            3.89         0.22
+instr_addr_o[13] (out)              3.66 f            3.89         0.23
+instr_addr_o[8] (out)               3.65 r            3.89         0.24
+instr_addr_o[30] (out)              3.64 r            3.89         0.25
+instr_addr_o[18] (out)              3.63 r            3.89         0.26
+instr_addr_o[14] (out)              3.63 r            3.89         0.26
+instr_addr_o[6] (out)               3.63 r            3.89         0.26
+instr_addr_o[2] (out)               3.62 f            3.89         0.27
+instr_addr_o[20] (out)              3.61 r            3.89         0.28
+instr_addr_o[31] (out)              3.60 r            3.89         0.29
+instr_addr_o[10] (out)              3.60 r            3.89         0.29
+instr_req_o (out)                   3.59 f            3.89         0.30
+instr_addr_o[4] (out)               3.51 r            3.89         0.38
+instr_addr_o[7] (out)               3.31 r            3.89         0.58
+double_fault_seen_o (out)           3.23 r            3.89         0.66
+instr_addr_o[5] (out)               3.22 f            3.89         0.67
+core_sleep_o (out)                  2.27 r            3.89         1.62
+core_busy_q_reg_0_/D (DFFRXLTS)     1.88 f            3.58         1.70
+
+1
