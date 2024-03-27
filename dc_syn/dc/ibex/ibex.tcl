@@ -18,13 +18,13 @@ source -verbose "../common_scripts/common.tcl"
 
 #find ~/ibex/rtl/ -name "*.sv" | xargs echo read_verilog
 
-set files [glob ../../../rtl/*.sv]
+set files [glob ../../../Verilog_files/*.v]
 #cd ~/ibex/rtl
 #read_sverilog ibex_alu.sv
 #cd ~/ibex_syn/dc/ibex
 foreach file $files {
-  read_sverilog $file
-  analyze -f sverilog $file
+  read_verilog $file
+  analyze -f verilog $file
 }
 
 elaborate ibex_top

@@ -11,3 +11,4 @@ clean:
 	rm -rf *.syn
 	rm -rf *pvl
 	rm -rf *mr
+	rm -rf *pvk
