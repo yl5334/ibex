@@ -12,7 +12,7 @@
   `define PRIM_DEFAULT_IMPL prim_pkg::ImplGeneric
 `endif
 
-module prim_clock_gating (
+module _gating (
   input        clk_i,
   input        en_i,
   input        test_en_i,

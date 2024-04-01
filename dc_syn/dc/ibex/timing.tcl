@@ -8,7 +8,7 @@
 ################################################## 
 
 # Variables for clock
-set clk_period 4
+set clk_period 10
 set clk_uncertainty 0.01
 set clk_transition 0.01
 

@@ -49,6 +49,8 @@ current_design $top_level
 link
 
 
+
+
 ##################################################
 # Define design rule constraints                    
 ##################################################
@@ -80,6 +82,12 @@ source -verbose "./timing.tcl"
 set_fix_multiple_port_nets -all -buffer_constants
 
 
+
+### CLOCK_GATING ###
+set_clock_gating_style  -num_stages 4 -setup 0.5
+
+
+
 ##################################################
 # Optimize the design
 ##################################################
@@ -95,7 +103,7 @@ link
 
 # Synthesize the design
 # Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
-compile_ultra
+compile_ultra -gate_clock
 
 
 ##################################################
@@ -107,6 +115,8 @@ check_design
 
 # Rename modules, signals according to the naming rules
 source -verbose "../common_scripts/namingrules.tcl"
+
+report_clock_gating
 
 # Generate a report file
 set rpt_file "${top_level}.dc.rpt"
@@ -123,6 +133,8 @@ report_compile_options >> ${rpt_file}
 report_constraint -all_violators -verbose >> ${rpt_file}
 report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
 report_timing_requirements >> ${rpt_file} 
+
+
 
 report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
 report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
