@@ -13,6 +13,8 @@ set top_level ibex
 # In this file, libray path and libraries which are used are defined
 source -verbose "../common_scripts/common.tcl" 
 
+set hdlin_enable_rtldrc_info true
+
 # Read verilog files
 #read_verilog $(ls ~/ibex/rtl/*.sv)
 
@@ -89,6 +91,25 @@ set_clock_gating_style  -num_stages 4 -setup 0.5
 
 ### operation_isolation ###
 set do_operand_isolation true
+
+set_scan_configuration -style multiplexed_flip_flop
+
+compile -scan
+
+source DFT.tcl
+
+create_test_protocol
+
+dft_drc
+
+set_scan_configuration -chain_count 4
+
+preview_dft
+
+insert_dft
+
+
+
 
 ##################################################
 # Optimize the design
