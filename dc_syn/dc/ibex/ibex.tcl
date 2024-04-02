@@ -87,6 +87,8 @@ set_fix_multiple_port_nets -all -buffer_constants
 set_clock_gating_style  -num_stages 4 -setup 0.5
 
 
+### operation_isolation ###
+set do_operand_isolation true
 
 ##################################################
 # Optimize the design
