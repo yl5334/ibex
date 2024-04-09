@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue Apr  9 16:31:31 2024                
+#  Created on Tue Apr  9 17:15:43 2024                
 #                                                     
 #######################################################
 
@@ -16,4 +16,13 @@
 set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
 win
-zoomBox -0.01600 -0.02100 0.12400 0.09700
+set init_verilog ../../../dc_syn/dc/ibex/ibex_top.nl.v
+set init_io_file ./ibex.io
+set init_lef_file {/courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef  /courses/ee6321/share/ibm13rflpvt/lef/ibm13rflpvt_macros.lef}
+set init_mmmc_file ./mmmc.view
+setImportMode -treatUndefinedCellAsBbox 0 -keepEmptyModule 1
+set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1}
+set init_pwr_net VDD
+set init_gnd_net VSS
+set_message -no_limit
+init_design

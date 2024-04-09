@@ -12,7 +12,8 @@ set init_design {ibex_top}
 set init_io_file {./ibex.io}
 
 # Set the name of your .lef file
-set init_lef_file {/courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef}
+set init_lef_file {/courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef \
+                   /courses/ee6321/share/ibm13rflpvt/lef/ibm13rflpvt_macros.lef}
 
 ##############################################################
 # Below here you probably don't have to change anything
