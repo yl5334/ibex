@@ -8,7 +8,7 @@
 ##################################################
 
 # Set the top_level name
-set top_level ibex
+set top_level ibex_top
 
 # In this file, libray path and libraries which are used are defined
 source -verbose "../common_scripts/common.tcl" 
