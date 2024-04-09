@@ -1,8 +1,8 @@
 run:
-	innovus -nowin -init eecs6321_top.tcl
+	innovus -nowin -init ibex.tcl
 
 cdl:
-	perl v2lvs.pl eecs6321_top
+	perl v2lvs.pl ibex
 
 clean:	
 	rm -rf innovus* *enc*
