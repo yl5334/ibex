@@ -16,3 +16,4 @@
 set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
 win
+zoomBox -0.01600 -0.02100 0.12400 0.09700

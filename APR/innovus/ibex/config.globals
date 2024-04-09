@@ -3,16 +3,16 @@
 ##############################################
 
 # Verilog netlist.
-set init_verilog {../../rtl/eecs6321_top/eecs6321_top.v}
+set init_verilog {../../../dc_syn/dc/ibex/ibex_top.nl.v}
 
 # Top module.
-set init_design {eecs6321_top}
+set init_design {ibex_top}
 
 # IO file.
-set init_io_file {./eecs6321_top.io}
+set init_io_file {./ibex.io}
 
 # Set the name of your .lef file
-set init_lef_file {/courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef \ YOUR sub-block .lef files}
+set init_lef_file {/courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef}
 
 ##############################################################
 # Below here you probably don't have to change anything

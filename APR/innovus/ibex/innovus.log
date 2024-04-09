@@ -20,3 +20,4 @@ Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_s
 <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 <CMD> suppressMessage ENCEXT-2799
 <CMD> win
+<CMD> zoomBox -0.01600 -0.02100 0.12400 0.09700

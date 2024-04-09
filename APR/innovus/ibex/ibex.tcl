@@ -7,7 +7,7 @@
 # Setup design
 ##################################################
 
-set design_name eecs6321_top
+set design_name ibex_top
 source ./config.globals
 set_message -no_limit
 

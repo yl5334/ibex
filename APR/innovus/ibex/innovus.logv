@@ -34,3 +34,4 @@
 [04/09 16:31:33     33s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 [04/09 16:31:33     33s] <CMD> suppressMessage ENCEXT-2799
 [04/09 16:31:33     33s] <CMD> win
+[04/09 16:39:16     69s] <CMD> zoomBox -0.01600 -0.02100 0.12400 0.09700
