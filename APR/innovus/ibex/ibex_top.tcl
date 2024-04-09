@@ -15,20 +15,23 @@ set_message -no_limit
 # Notes: At this script, all the settings are included in the file 'config.globals'
 init_design
 
+##################################################
+# Set the parameters for the floorplan
+##################################################
 
 set std_cell_height 3.6
-set core_width 435
+set core_width 504
 # core_height should be a multiple of the std_cell_height
 # Need to iterate the core width and height to make the density close to 0.7
-set core_height [expr 120.8*$std_cell_height]
-set ring_left_width 5
-set ring_right_width 5
-set ring_top_width 5
-set ring_bottom_width 5
-set ring_left_space 2.5
-set ring_right_space 2.5 
-set ring_top_space 2.5
-set ring_bottom_space 2.5
+set core_height [expr 140*$std_cell_height]
+set ring_left_width 2.4
+set ring_right_width 2.4
+set ring_top_width 2.4
+set ring_bottom_width 2.4
+set ring_left_space 1.2
+set ring_right_space 1.2 
+set ring_top_space 1.2
+set ring_bottom_space 1.2
 
 
 ##################################################
