@@ -3732,3 +3732,205 @@
 [04/09 17:16:43     42s] WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
 [04/09 17:16:43     42s] *** Message Summary: 1738 warning(s), 0 error(s)
 [04/09 17:16:43     42s] 
+[04/09 17:20:36     62s] <CMD> floorPlan -s 435 434.88 17.5 17.5 17.5 17.5
+[04/09 17:20:36     62s] **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/09 17:20:36     62s] **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/09 17:20:36     62s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/09 17:20:36     62s] **WARN: (IMPFP-4026):	Adjusting core to 'Top' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[04/09 17:20:36     62s] Start create_tracks
+[04/09 17:20:36     62s] Generated pitch 4.8 in LY is different from 4.4 defined in technology file in preferred direction.
+[04/09 17:20:36     62s] Generated pitch 0.8 in MG is different from 4 defined in technology file in preferred direction.
+[04/09 17:20:36     62s] Generated pitch 0.4 in M3 is different from 0.5 defined in technology file in preferred direction.
+[04/09 17:20:36     62s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[04/09 17:20:37     62s] <CMD> redraw
+[04/09 17:20:37     62s] <CMD> fit
+[04/09 17:20:58     64s] #####################
+[04/09 17:20:58     64s] ###
+[04/09 17:20:58     64s] ### Power Routing ...
+[04/09 17:20:58     64s] ###
+[04/09 17:20:58     64s] #####################
+[04/09 17:20:58     64s] <CMD> globalNetConnect VDD -type tiehi -inst * -verbose
+[04/09 17:20:58     64s] <CMD> globalNetConnect VSS -type tielo -inst * -verbose
+[04/09 17:20:58     64s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[04/09 17:20:58     64s] 14384 new pwr-pin connections were made to global net 'VDD'.
+[04/09 17:20:58     64s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[04/09 17:20:58     64s] 14384 new gnd-pin connections were made to global net 'VSS'.
+[04/09 17:20:58     64s] <CMD> applyGlobalNets
+[04/09 17:20:58     64s] *** Checked 4 GNC rules.
+[04/09 17:20:58     64s] *** Applying global-net connections...
+[04/09 17:20:58     64s] 14384 new pwr-pin connections were made to global net 'VDD'.
+[04/09 17:20:58     64s] 14384 new gnd-pin connections were made to global net 'VSS'.
+[04/09 17:20:58     64s] *** Applied 4 GNC rules (cpu = 0:00:00.0)
+[04/09 17:20:58     64s] <CMD> addRing -nets {VDD VSS} -type core_rings -layer {top M3 bottom M3 left M2 right M2} -width 5 -spacing 2.5 -center 1
+[04/09 17:20:58     64s] #% Begin addRing (date=04/09 17:20:58, mem=1297.4M)
+[04/09 17:20:58     64s] 
+[04/09 17:20:58     64s] 
+[04/09 17:20:58     64s] viaInitial starts at Tue Apr  9 17:20:58 2024
+viaInitial ends at Tue Apr  9 17:20:58 2024
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1614.7M)
+[04/09 17:20:58     64s] Ring generation is complete.
+[04/09 17:20:58     64s] vias are now being generated.
+[04/09 17:20:58     64s] addRing created 8 wires.
+[04/09 17:20:58     64s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[04/09 17:20:58     64s] +--------+----------------+----------------+
+[04/09 17:20:58     64s] |  Layer |     Created    |     Deleted    |
+[04/09 17:20:58     64s] +--------+----------------+----------------+
+[04/09 17:20:58     64s] |   M2   |        4       |       NA       |
+[04/09 17:20:58     64s] |   V2   |        8       |        0       |
+[04/09 17:20:58     64s] |   M3   |        4       |       NA       |
+[04/09 17:20:58     64s] +--------+----------------+----------------+
+[04/09 17:20:58     64s] #% End addRing (date=04/09 17:20:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1299.6M, current mem=1299.6M)
+[04/09 17:20:58     64s] <CMD> redraw
+[04/09 17:20:58     64s] <CMD> sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
+[04/09 17:20:58     64s] #% Begin sroute (date=04/09 17:20:58, mem=1299.6M)
+[04/09 17:20:58     64s] *** Begin SPECIAL ROUTE on Tue Apr  9 17:20:58 2024 ***
+[04/09 17:20:58     64s] SPECIAL ROUTE ran on directory: /homes/user/stud/fall23/yx2821/6321/ibex/ibex/APR/innovus/ibex
+[04/09 17:20:58     64s] SPECIAL ROUTE ran on machine: cadpc28 (Linux 3.10.0-1160.114.2.el7.x86_64 x86_64 3.54Ghz)
+[04/09 17:20:58     64s] 
+[04/09 17:20:58     64s] Begin option processing ...
+[04/09 17:20:58     64s] srouteConnectPowerBump set to false
+[04/09 17:20:58     64s] routeSelectNet set to "VDD VSS"
+[04/09 17:20:58     64s] routeSpecial set to true
+[04/09 17:20:58     64s] srouteConnectConverterPin set to false
+[04/09 17:20:58     64s] srouteFollowCorePinEnd set to 3
+[04/09 17:20:58     64s] srouteNoLayerChangeRoute set to true
+[04/09 17:20:58     64s] sroutePadPinAllPorts set to true
+[04/09 17:20:58     64s] sroutePreserveExistingRoutes set to true
+[04/09 17:20:58     64s] srouteRoutePowerBarPortOnBothDir set to true
+[04/09 17:20:58     64s] srouteStraightConnections set to "straightWithDrcClean"
+[04/09 17:20:58     64s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3066.00 megs.
+[04/09 17:20:58     64s] 
+[04/09 17:20:58     64s] Reading DB technology information...
+[04/09 17:20:58     64s] Finished reading DB technology information.
+[04/09 17:20:58     64s] Reading floorplan and netlist information...
+[04/09 17:20:59     64s] Finished reading floorplan and netlist information.
+[04/09 17:20:59     64s] Read in 16 layers, 8 routing layers, 1 overlap layer
+[04/09 17:20:59     64s] Read in 535 macros, 172 used
+[04/09 17:20:59     64s] Read in 171 components
+[04/09 17:20:59     64s]   171 core components: 171 unplaced, 0 placed, 0 fixed
+[04/09 17:20:59     64s] Read in 99 physical pins
+[04/09 17:20:59     64s]   99 physical pins: 0 unplaced, 0 placed, 99 fixed
+[04/09 17:20:59     64s] Read in 558 logical pins
+[04/09 17:20:59     64s] Read in 657 nets
+[04/09 17:20:59     64s] Read in 2 special nets, 2 routed
+[04/09 17:20:59     64s] Read in 441 terminals
+[04/09 17:20:59     64s] 2 nets selected.
+[04/09 17:20:59     64s] 
+[04/09 17:20:59     64s] Begin power routing ...
+[04/09 17:20:59     64s] #create default rule from bind_ndr_rule rule=0x7f2f9a147030 0x7f2f8d6a0ff0
+[04/09 17:20:59     64s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 via=1912239594 routing_via=1
+[04/09 17:20:59     64s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[04/09 17:20:59     64s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[04/09 17:20:59     64s] Type 'man IMPSR-1256' for more detail.
+[04/09 17:20:59     64s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[04/09 17:20:59     64s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[04/09 17:20:59     64s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[04/09 17:20:59     64s] Type 'man IMPSR-1256' for more detail.
+[04/09 17:20:59     64s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[04/09 17:20:59     64s] CPU time for VDD FollowPin 0 seconds
+[04/09 17:20:59     64s] CPU time for VSS FollowPin 0 seconds
+[04/09 17:20:59     64s]   Number of IO ports routed: 0
+[04/09 17:20:59     64s]   Number of Block ports routed: 0
+[04/09 17:20:59     64s]   Number of Stripe ports routed: 0
+[04/09 17:20:59     64s]   Number of Core ports routed: 242
+[04/09 17:20:59     64s]   Number of Pad ports routed: 0
+[04/09 17:20:59     64s]   Number of Power Bump ports routed: 0
+[04/09 17:20:59     64s]   Number of Followpin connections: 121
+[04/09 17:20:59     64s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3089.00 megs.
+[04/09 17:20:59     64s] 
+[04/09 17:20:59     64s] 
+[04/09 17:20:59     64s] 
+[04/09 17:20:59     64s]  Begin updating DB with routing results ...
+[04/09 17:20:59     64s]  Updating DB with 99 io pins ...
+[04/09 17:20:59     64s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[04/09 17:20:59     64s] Pin and blockage extraction finished
+[04/09 17:20:59     64s] 
+[04/09 17:20:59     64s] sroute created 363 wires.
+[04/09 17:20:59     64s] ViaGen created 242 vias, deleted 0 via to avoid violation.
+[04/09 17:20:59     64s] +--------+----------------+----------------+
+[04/09 17:20:59     64s] |  Layer |     Created    |     Deleted    |
+[04/09 17:20:59     64s] +--------+----------------+----------------+
+[04/09 17:20:59     64s] |   M1   |       363      |       NA       |
+[04/09 17:20:59     64s] |   V1   |       242      |        0       |
+[04/09 17:20:59     64s] +--------+----------------+----------------+
+[04/09 17:20:59     64s] #% End sroute (date=04/09 17:20:59, total cpu=0:00:00.5, real=0:00:01.0, peak res=1328.2M, current mem=1315.2M)
+[04/09 17:28:52    100s] <CMD> loadIoFile ./ibex_top.io
+[04/09 17:28:52    100s] Reading IO assignment file "./ibex_top.io" ...
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 16: Pin: fetch_enable_i N 3 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 107: Pin: instr_addr_o[31:0] S 3 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 108: Pin: instr_rdata_i[31:0] S 3 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 109: Pin: instr_rdata_intg_i[6:0] S 3 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 120: Pin: data_be_o[3:0] W 2 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 121: Pin: data_addr_o[31:0] W 2 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 122: Pin: data_wdata_o[31:0] W 2 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 123: Pin: data_rdata_i[31:0] W 2 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 127: Pin: data_wdata_intg_o[6:0] E 2 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 128: Pin: data_rdata_intg_i[6:0] E 2 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 137: Pin: irq_fast_i[14:0] N 3 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 144: Pin: scramble_key_i[127:0] S 3 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 145: Pin: scramble_nonce_i[63:0] S 3 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] **Warn: ignored IO file "./ibex_top.io" line 151: Pin: crash_dump_o[159:0] E 2 0.2000 0.6000
+  Reason: unable to determine object from name.
+[04/09 17:28:52    100s] <CMD> redraw
+[04/09 17:28:52    100s] <CMD> saveDesign ibex_top.floorplan.enc
+[04/09 17:28:52    100s] #% Begin save design ... (date=04/09 17:28:52, mem=1319.5M)
+[04/09 17:28:52    100s] % Begin Save ccopt configuration ... (date=04/09 17:28:52, mem=1319.5M)
+[04/09 17:28:52    100s] % End Save ccopt configuration ... (date=04/09 17:28:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1320.6M, current mem=1320.6M)
+[04/09 17:28:52    100s] % Begin Save netlist data ... (date=04/09 17:28:52, mem=1320.6M)
+[04/09 17:28:52    100s] Writing Binary DB to ibex_top.floorplan.enc.dat/ibex_top.v.bin in single-threaded mode...
+[04/09 17:28:52    100s] % End Save netlist data ... (date=04/09 17:28:52, total cpu=0:00:00.1, real=0:00:00.0, peak res=1320.7M, current mem=1320.7M)
+[04/09 17:28:52    100s] Saving symbol-table file ...
+[04/09 17:28:53    100s] Saving congestion map file ibex_top.floorplan.enc.dat/ibex_top.route.congmap.gz ...
+[04/09 17:28:53    100s] % Begin Save AAE data ... (date=04/09 17:28:53, mem=1321.5M)
+[04/09 17:28:53    100s] Saving AAE Data ...
+[04/09 17:28:53    100s] % End Save AAE data ... (date=04/09 17:28:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1321.5M, current mem=1321.5M)
+[04/09 17:28:53    100s] Saving preference file ibex_top.floorplan.enc.dat/gui.pref.tcl ...
+[04/09 17:28:53    100s] Saving mode setting ...
+[04/09 17:28:53    100s] Saving global file ...
+[04/09 17:28:54    100s] % Begin Save floorplan data ... (date=04/09 17:28:54, mem=1325.4M)
+[04/09 17:28:54    100s] Saving floorplan file ...
+[04/09 17:28:54    100s] % End Save floorplan data ... (date=04/09 17:28:54, total cpu=0:00:00.1, real=0:00:00.0, peak res=1325.4M, current mem=1325.4M)
+[04/09 17:28:54    100s] Saving PG file ibex_top.floorplan.enc.dat/ibex_top.pg.gz, version#2, (Created by Innovus v21.16-s078_1 on Tue Apr  9 17:28:54 2024)
+[04/09 17:28:55    100s] *** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1641.6M) ***
+[04/09 17:28:55    100s] Saving Drc markers ...
+[04/09 17:28:55    100s] ... No Drc file written since there is no markers found.
+[04/09 17:28:55    100s] % Begin Save placement data ... (date=04/09 17:28:55, mem=1325.1M)
+[04/09 17:28:55    101s] ** Saving stdCellPlacement_binary (version# 2) ...
+[04/09 17:28:55    101s] Save Adaptive View Pruning View Names to Binary file
+[04/09 17:28:55    101s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1644.6M) ***
+[04/09 17:28:55    101s] % End Save placement data ... (date=04/09 17:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1325.1M, current mem=1325.1M)
+[04/09 17:28:55    101s] % Begin Save routing data ... (date=04/09 17:28:55, mem=1325.1M)
+[04/09 17:28:55    101s] Saving route file ...
+[04/09 17:28:55    101s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1641.6M) ***
+[04/09 17:28:55    101s] % End Save routing data ... (date=04/09 17:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1325.4M, current mem=1325.4M)
+[04/09 17:28:55    101s] Saving property file ibex_top.floorplan.enc.dat/ibex_top.prop
+[04/09 17:28:55    101s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1644.6M) ***
+[04/09 17:28:55    101s] % Begin Save power constraints data ... (date=04/09 17:28:55, mem=1325.9M)
+[04/09 17:28:55    101s] % End Save power constraints data ... (date=04/09 17:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1326.1M, current mem=1326.1M)
+[04/09 17:28:56    101s] Generated self-contained design ibex_top.floorplan.enc.dat
+[04/09 17:28:56    101s] #% End save design ... (date=04/09 17:28:56, total cpu=0:00:00.9, real=0:00:04.0, peak res=1356.2M, current mem=1327.4M)
+[04/09 17:28:56    101s] *** Message Summary: 0 warning(s), 0 error(s)
+[04/09 17:28:56    101s] 
+[04/09 17:29:02    102s] <CMD> zoomBox -42.14900 -16.03700 375.10700 357.49600
+[04/09 17:29:02    102s] <CMD> zoomBox -34.03600 -11.19600 267.43200 258.68200
+[04/09 17:29:03    102s] <CMD> zoomBox -15.61200 -6.62400 118.15200 113.12300
+[04/09 17:29:04    102s] <CMD> zoomBox -5.91400 -4.57800 44.53700 40.58600
+[04/09 17:29:04    102s] <CMD> zoomBox -2.64700 -3.27100 19.73900 16.76900
+[04/09 17:29:05    102s] <CMD> zoomBox -1.98000 -2.62000 14.19400 11.85900
+[04/09 17:29:05    102s] <CMD> zoomBox -1.15100 -1.81100 7.29200 5.74700
+[04/09 17:29:06    102s] <CMD> zoomBox -0.85700 -1.38400 5.24300 4.07700
+[04/09 17:29:06    102s] <CMD> zoomBox -0.56200 -0.95000 3.18500 2.40400
+[04/09 17:29:07    102s] <CMD> fit

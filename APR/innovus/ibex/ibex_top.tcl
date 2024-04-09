@@ -120,7 +120,7 @@ sroute -nets {VSS} -padPinLayerRange {1 3}
 ##################################################
  
 # Load an I/O assignment file 
-loadIoFile "./$design_name.io"
+loadIoFile "./ibex.io"
 
 redraw
 

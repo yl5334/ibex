@@ -26,3 +26,27 @@ set init_pwr_net VDD
 set init_gnd_net VSS
 set_message -no_limit
 init_design
+floorPlan -s 435 434.88 17.5 17.5 17.5 17.5
+redraw
+fit
+globalNetConnect VDD -type tiehi -inst * -verbose
+globalNetConnect VSS -type tielo -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+applyGlobalNets
+addRing -nets {VDD VSS} -type core_rings -layer {top M3 bottom M3 left M2 right M2} -width 5 -spacing 2.5 -center 1
+redraw
+sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
+loadIoFile ./ibex_top.io
+redraw
+saveDesign ibex_top.floorplan.enc
+zoomBox -42.14900 -16.03700 375.10700 357.49600
+zoomBox -34.03600 -11.19600 267.43200 258.68200
+zoomBox -15.61200 -6.62400 118.15200 113.12300
+zoomBox -5.91400 -4.57800 44.53700 40.58600
+zoomBox -2.64700 -3.27100 19.73900 16.76900
+zoomBox -1.98000 -2.62000 14.19400 11.85900
+zoomBox -1.15100 -1.81100 7.29200 5.74700
+zoomBox -0.85700 -1.38400 5.24300 4.07700
+zoomBox -0.56200 -0.95000 3.18500 2.40400
+fit
