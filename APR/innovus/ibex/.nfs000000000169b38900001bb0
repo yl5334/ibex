@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue Apr  9 17:15:43 2024                
+#  Created on Tue Apr  9 17:20:45 2024                
 #                                                     
 #######################################################
 
@@ -16,6 +16,7 @@
 set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
 win
+zoomBox -0.04900 -0.01800 0.11700 0.12200
 set init_verilog ../../../dc_syn/dc/ibex/ibex_top.nl.v
 set init_io_file ./ibex.io
 set init_lef_file {/courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef  /courses/ee6321/share/ibm13rflpvt/lef/ibm13rflpvt_macros.lef}
@@ -26,27 +27,21 @@ set init_pwr_net VDD
 set init_gnd_net VSS
 set_message -no_limit
 init_design
-floorPlan -s 435 434.88 17.5 17.5 17.5 17.5
-redraw
-fit
-globalNetConnect VDD -type tiehi -inst * -verbose
-globalNetConnect VSS -type tielo -inst * -verbose
-globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
-globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
-applyGlobalNets
-addRing -nets {VDD VSS} -type core_rings -layer {top M3 bottom M3 left M2 right M2} -width 5 -spacing 2.5 -center 1
-redraw
-sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
-loadIoFile ./ibex_top.io
-redraw
-saveDesign ibex_top.floorplan.enc
-zoomBox -42.14900 -16.03700 375.10700 357.49600
-zoomBox -34.03600 -11.19600 267.43200 258.68200
-zoomBox -15.61200 -6.62400 118.15200 113.12300
-zoomBox -5.91400 -4.57800 44.53700 40.58600
-zoomBox -2.64700 -3.27100 19.73900 16.76900
-zoomBox -1.98000 -2.62000 14.19400 11.85900
-zoomBox -1.15100 -1.81100 7.29200 5.74700
-zoomBox -0.85700 -1.38400 5.24300 4.07700
-zoomBox -0.56200 -0.95000 3.18500 2.40400
-fit
+uiSetTool move
+zoomBox -104.10800 -32.96900 645.44500 600.63100
+zoomBox -146.49400 -45.39300 735.33300 700.01900
+zoomBox -61.77200 -21.05800 575.34900 517.50300
+zoomBox -160.33200 -58.74300 589.22200 574.85800
+zoomBox -412.41500 -151.44000 625.03100 725.51700
+zoomBox -905.95200 -273.63100 783.35600 1154.34800
+zoomBox -511.88200 -151.50600 708.64400 880.20900
+zoomBox -357.79900 -103.62900 679.64800 773.32900
+zoomBox -244.02500 -78.12300 637.80600 667.29200
+zoomBox 74.81700 -12.00300 535.14000 377.11000
+zoomBox 339.05800 59.08900 512.67000 205.84400
+zoomBox 243.24100 29.75700 525.94000 268.72400
+zoomBox 204.74400 16.06700 537.33300 297.20600
+zoomBox 161.72400 -0.14600 553.00600 330.60600
+zoomBox 75.37300 -25.88600 616.94000 431.90300
+zoomBox -46.26900 -61.30500 703.30700 572.31400
+getIoFlowFlag

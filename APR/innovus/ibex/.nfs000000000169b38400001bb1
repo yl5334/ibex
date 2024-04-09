@@ -4,12 +4,12 @@ Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v21.16-s078_1, built Wed Dec 7 12:07:06 PST 2022
 Options:	
-Date:		Tue Apr  9 17:14:49 2024
+Date:		Tue Apr  9 17:19:51 2024
 Host:		cadpc28 (x86_64 w/Linux 3.10.0-1160.114.2.el7.x86_64) (8cores*16cpus*11th Gen Intel(R) Core(TM) i9-11900 @ 2.50GHz 16384KB)
 OS:		Red Hat Enterprise Linux Workstation release 7.9 (Maipo)
 
 License:
-		[17:14:49.022481] Configured Lic search path (21.01-s002): 5280@bioeelincad.ee.columbia.edu
+		[17:19:51.022465] Configured Lic search path (21.01-s002): 5280@bioeelincad.ee.columbia.edu
 
 		invs	Innovus Implementation System	21.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
@@ -20,6 +20,7 @@ Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_s
 <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 <CMD> suppressMessage ENCEXT-2799
 <CMD> win
+<CMD> zoomBox -0.04900 -0.01800 0.11700 0.12200
 <CMD> set init_verilog ../../../dc_syn/dc/ibex/ibex_top.nl.v
 <CMD> set init_io_file ./ibex.io
 <CMD> set init_lef_file {/courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef  /courses/ee6321/share/ibm13rflpvt/lef/ibm13rflpvt_macros.lef}
@@ -30,8 +31,8 @@ Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_s
 <CMD> set init_gnd_net VSS
 <CMD> set_message -no_limit
 <CMD> init_design
-#% Begin Load MMMC data ... (date=04/09 17:16:38, mem=795.6M)
-#% End Load MMMC data ... (date=04/09 17:16:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=796.4M, current mem=796.4M)
+#% Begin Load MMMC data ... (date=04/09 17:27:16, mem=799.4M)
+#% End Load MMMC data ... (date=04/09 17:27:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=799.7M, current mem=799.7M)
 typical_rc
 
 Loading LEF file /courses/ee6321/share/ibm13rflpvt/lef/ibm13_8lm_2thick_3rf_tech.lef ...
@@ -1394,9 +1395,9 @@ Loading view definition file from ./mmmc.view
 Reading typical_lib timing library '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.lib' ...
 **WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1TS'. The cell will only be used for analysis. (File /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.lib)
 Read 527 cells in library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' 
-*** End library_loading (cpu=0.04min, real=0.05min, mem=24.5M, fe_cpu=0.67min, fe_real=1.87min, fe_mem=1005.6M) ***
-#% Begin Load netlist data ... (date=04/09 17:16:41, mem=817.9M)
-*** Begin netlist parsing (mem=1005.6M) ***
+*** End library_loading (cpu=0.04min, real=0.03min, mem=23.5M, fe_cpu=1.09min, fe_real=7.45min, fe_mem=1009.5M) ***
+#% Begin Load netlist data ... (date=04/09 17:27:18, mem=822.6M)
+*** Begin netlist parsing (mem=1009.5M) ***
 **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XLTS' is defined in LEF but not in the timing library.
 Type 'man IMPVL-159' for more detail.
 **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XLTS' is defined in LEF but not in the timing library.
@@ -3510,9 +3511,9 @@ Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilog netlist '../../../dc_syn/dc/ibex/ibex_top.nl.v'
 
-*** Memory Usage v#1 (Current mem = 1008.633M, initial mem = 476.047M) ***
-*** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=1008.6M) ***
-#% End Load netlist data ... (date=04/09 17:16:41, total cpu=0:00:00.2, real=0:00:00.0, peak res=831.8M, current mem=831.8M)
+*** Memory Usage v#1 (Current mem = 1014.484M, initial mem = 476.047M) ***
+*** End netlist parsing (cpu=0:00:00.2, real=0:00:01.0, mem=1014.5M) ***
+#% End Load netlist data ... (date=04/09 17:27:19, total cpu=0:00:00.2, real=0:00:01.0, peak res=836.8M, current mem=836.8M)
 Top level cell is ibex_top.
 Hooked 527 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -3522,7 +3523,7 @@ Building hierarchical netlist for Cell ibex_top ...
 ** info: there are 596 modules.
 ** info: there are 14384 stdCell insts.
 
-*** Memory Usage v#1 (Current mem = 1079.559M, initial mem = 476.047M) ***
+*** Memory Usage v#1 (Current mem = 1076.410M, initial mem = 476.047M) ***
 Reading IO assignment file "./ibex.io" ...
 **Warn: ignored IO file "./ibex.io" line 16: Pin: fetch_enable_i N 3 0.2000 0.6000
   Reason: unable to determine object from name.
@@ -3603,12 +3604,12 @@ Updating RC grid for preRoute extraction ...
 Initializing multi-corner resistance tables ...
 *Info: initialize multi-corner CTS.
 Reading timing constraints file '../../../dc_syn/dc/ibex/ibex_top.syn.sdc' ...
-Current (total cpu=0:00:41.8, real=0:01:53, peak res=1123.3M, current mem=1123.3M)
+Current (total cpu=0:01:07, real=0:07:29, peak res=1124.2M, current mem=1124.1M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../../../dc_syn/dc/ibex/ibex_top.syn.sdc, Line 8).
 
 INFO (CTE): Reading of timing constraints file ../../../dc_syn/dc/ibex/ibex_top.syn.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:01.0, peak res=1218.4M, current mem=1218.4M)
-Current (total cpu=0:00:42.1, real=0:01:54, peak res=1218.4M, current mem=1218.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:00.0, peak res=1219.3M, current mem=1219.3M)
+Current (total cpu=0:01:07, real=0:07:29, peak res=1219.3M, current mem=1219.3M)
 Total number of combinational cells: 363
 Total number of sequential cells: 154
 Total number of tristate cells: 10
@@ -3644,203 +3645,21 @@ WARNING   TCLCMD-1461          1  Skipped unsupported command: %s
 WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
 *** Message Summary: 1738 warning(s), 0 error(s)
 
-<CMD> floorPlan -s 435 434.88 17.5 17.5 17.5 17.5
-**WARN: (IMPFP-4026):	Adjusting core to 'Left' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
-**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
-**WARN: (IMPFP-4026):	Adjusting core to 'Right' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
-**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 17.600000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
-Start create_tracks
-Generated pitch 4.8 in LY is different from 4.4 defined in technology file in preferred direction.
-Generated pitch 0.8 in MG is different from 4 defined in technology file in preferred direction.
-Generated pitch 0.4 in M3 is different from 0.5 defined in technology file in preferred direction.
-**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
-<CMD> redraw
-<CMD> fit
-#####################
-###
-### Power Routing ...
-###
-#####################
-<CMD> globalNetConnect VDD -type tiehi -inst * -verbose
-<CMD> globalNetConnect VSS -type tielo -inst * -verbose
-<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
-14384 new pwr-pin connections were made to global net 'VDD'.
-<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
-14384 new gnd-pin connections were made to global net 'VSS'.
-<CMD> applyGlobalNets
-*** Checked 4 GNC rules.
-*** Applying global-net connections...
-14384 new pwr-pin connections were made to global net 'VDD'.
-14384 new gnd-pin connections were made to global net 'VSS'.
-*** Applied 4 GNC rules (cpu = 0:00:00.0)
-<CMD> addRing -nets {VDD VSS} -type core_rings -layer {top M3 bottom M3 left M2 right M2} -width 5 -spacing 2.5 -center 1
-#% Begin addRing (date=04/09 17:20:58, mem=1297.4M)
-
-
-viaInitial starts at Tue Apr  9 17:20:58 2024
-viaInitial ends at Tue Apr  9 17:20:58 2024
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1614.7M)
-Ring generation is complete.
-vias are now being generated.
-addRing created 8 wires.
-ViaGen created 8 vias, deleted 0 via to avoid violation.
-+--------+----------------+----------------+
-|  Layer |     Created    |     Deleted    |
-+--------+----------------+----------------+
-|   M2   |        4       |       NA       |
-|   V2   |        8       |        0       |
-|   M3   |        4       |       NA       |
-+--------+----------------+----------------+
-#% End addRing (date=04/09 17:20:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1299.6M, current mem=1299.6M)
-<CMD> redraw
-<CMD> sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
-#% Begin sroute (date=04/09 17:20:58, mem=1299.6M)
-*** Begin SPECIAL ROUTE on Tue Apr  9 17:20:58 2024 ***
-SPECIAL ROUTE ran on directory: /homes/user/stud/fall23/yx2821/6321/ibex/ibex/APR/innovus/ibex
-SPECIAL ROUTE ran on machine: cadpc28 (Linux 3.10.0-1160.114.2.el7.x86_64 x86_64 3.54Ghz)
-
-Begin option processing ...
-srouteConnectPowerBump set to false
-routeSelectNet set to "VDD VSS"
-routeSpecial set to true
-srouteConnectConverterPin set to false
-srouteFollowCorePinEnd set to 3
-srouteNoLayerChangeRoute set to true
-sroutePadPinAllPorts set to true
-sroutePreserveExistingRoutes set to true
-srouteRoutePowerBarPortOnBothDir set to true
-srouteStraightConnections set to "straightWithDrcClean"
-End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3066.00 megs.
-
-Reading DB technology information...
-Finished reading DB technology information.
-Reading floorplan and netlist information...
-Finished reading floorplan and netlist information.
-Read in 16 layers, 8 routing layers, 1 overlap layer
-Read in 535 macros, 172 used
-Read in 171 components
-  171 core components: 171 unplaced, 0 placed, 0 fixed
-Read in 99 physical pins
-  99 physical pins: 0 unplaced, 0 placed, 99 fixed
-Read in 558 logical pins
-Read in 657 nets
-Read in 2 special nets, 2 routed
-Read in 441 terminals
-2 nets selected.
-
-Begin power routing ...
-**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
-**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
-Type 'man IMPSR-1256' for more detail.
-Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
-**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
-**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
-Type 'man IMPSR-1256' for more detail.
-Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
-CPU time for VDD FollowPin 0 seconds
-CPU time for VSS FollowPin 0 seconds
-  Number of IO ports routed: 0
-  Number of Block ports routed: 0
-  Number of Stripe ports routed: 0
-  Number of Core ports routed: 242
-  Number of Pad ports routed: 0
-  Number of Power Bump ports routed: 0
-  Number of Followpin connections: 121
-End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3089.00 megs.
-
-
-
- Begin updating DB with routing results ...
- Updating DB with 99 io pins ...
- Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
-Pin and blockage extraction finished
-
-sroute created 363 wires.
-ViaGen created 242 vias, deleted 0 via to avoid violation.
-+--------+----------------+----------------+
-|  Layer |     Created    |     Deleted    |
-+--------+----------------+----------------+
-|   M1   |       363      |       NA       |
-|   V1   |       242      |        0       |
-+--------+----------------+----------------+
-#% End sroute (date=04/09 17:20:59, total cpu=0:00:00.5, real=0:00:01.0, peak res=1328.2M, current mem=1315.2M)
-<CMD> loadIoFile ./ibex_top.io
-Reading IO assignment file "./ibex_top.io" ...
-**Warn: ignored IO file "./ibex_top.io" line 16: Pin: fetch_enable_i N 3 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 107: Pin: instr_addr_o[31:0] S 3 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 108: Pin: instr_rdata_i[31:0] S 3 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 109: Pin: instr_rdata_intg_i[6:0] S 3 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 120: Pin: data_be_o[3:0] W 2 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 121: Pin: data_addr_o[31:0] W 2 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 122: Pin: data_wdata_o[31:0] W 2 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 123: Pin: data_rdata_i[31:0] W 2 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 127: Pin: data_wdata_intg_o[6:0] E 2 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 128: Pin: data_rdata_intg_i[6:0] E 2 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 137: Pin: irq_fast_i[14:0] N 3 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 144: Pin: scramble_key_i[127:0] S 3 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 145: Pin: scramble_nonce_i[63:0] S 3 0.2000 0.6000
-  Reason: unable to determine object from name.
-**Warn: ignored IO file "./ibex_top.io" line 151: Pin: crash_dump_o[159:0] E 2 0.2000 0.6000
-  Reason: unable to determine object from name.
-<CMD> redraw
-<CMD> saveDesign ibex_top.floorplan.enc
-#% Begin save design ... (date=04/09 17:28:52, mem=1319.5M)
-% Begin Save ccopt configuration ... (date=04/09 17:28:52, mem=1319.5M)
-% End Save ccopt configuration ... (date=04/09 17:28:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1320.6M, current mem=1320.6M)
-% Begin Save netlist data ... (date=04/09 17:28:52, mem=1320.6M)
-Writing Binary DB to ibex_top.floorplan.enc.dat/ibex_top.v.bin in single-threaded mode...
-% End Save netlist data ... (date=04/09 17:28:52, total cpu=0:00:00.1, real=0:00:00.0, peak res=1320.7M, current mem=1320.7M)
-Saving symbol-table file ...
-Saving congestion map file ibex_top.floorplan.enc.dat/ibex_top.route.congmap.gz ...
-% Begin Save AAE data ... (date=04/09 17:28:53, mem=1321.5M)
-Saving AAE Data ...
-% End Save AAE data ... (date=04/09 17:28:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1321.5M, current mem=1321.5M)
-Saving preference file ibex_top.floorplan.enc.dat/gui.pref.tcl ...
-Saving mode setting ...
-Saving global file ...
-% Begin Save floorplan data ... (date=04/09 17:28:54, mem=1325.4M)
-Saving floorplan file ...
-% End Save floorplan data ... (date=04/09 17:28:54, total cpu=0:00:00.1, real=0:00:00.0, peak res=1325.4M, current mem=1325.4M)
-Saving PG file ibex_top.floorplan.enc.dat/ibex_top.pg.gz, version#2, (Created by Innovus v21.16-s078_1 on Tue Apr  9 17:28:54 2024)
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1641.6M) ***
-Saving Drc markers ...
-... No Drc file written since there is no markers found.
-% Begin Save placement data ... (date=04/09 17:28:55, mem=1325.1M)
-** Saving stdCellPlacement_binary (version# 2) ...
-Save Adaptive View Pruning View Names to Binary file
-% End Save placement data ... (date=04/09 17:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1325.1M, current mem=1325.1M)
-% Begin Save routing data ... (date=04/09 17:28:55, mem=1325.1M)
-Saving route file ...
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1641.6M) ***
-% End Save routing data ... (date=04/09 17:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1325.4M, current mem=1325.4M)
-Saving property file ibex_top.floorplan.enc.dat/ibex_top.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1644.6M) ***
-% Begin Save power constraints data ... (date=04/09 17:28:55, mem=1325.9M)
-% End Save power constraints data ... (date=04/09 17:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1326.1M, current mem=1326.1M)
-typical_rc
-Generated self-contained design ibex_top.floorplan.enc.dat
-#% End save design ... (date=04/09 17:28:56, total cpu=0:00:00.9, real=0:00:04.0, peak res=1356.2M, current mem=1327.4M)
-*** Message Summary: 0 warning(s), 0 error(s)
-
-<CMD> zoomBox -42.14900 -16.03700 375.10700 357.49600
-<CMD> zoomBox -34.03600 -11.19600 267.43200 258.68200
-<CMD> zoomBox -15.61200 -6.62400 118.15200 113.12300
-<CMD> zoomBox -5.91400 -4.57800 44.53700 40.58600
-<CMD> zoomBox -2.64700 -3.27100 19.73900 16.76900
-<CMD> zoomBox -1.98000 -2.62000 14.19400 11.85900
-<CMD> zoomBox -1.15100 -1.81100 7.29200 5.74700
-<CMD> zoomBox -0.85700 -1.38400 5.24300 4.07700
-<CMD> zoomBox -0.56200 -0.95000 3.18500 2.40400
-<CMD> fit
+<CMD> uiSetTool move
+<CMD> zoomBox -104.10800 -32.96900 645.44500 600.63100
+<CMD> zoomBox -146.49400 -45.39300 735.33300 700.01900
+<CMD> zoomBox -61.77200 -21.05800 575.34900 517.50300
+<CMD> zoomBox -160.33200 -58.74300 589.22200 574.85800
+<CMD> zoomBox -412.41500 -151.44000 625.03100 725.51700
+<CMD> zoomBox -905.95200 -273.63100 783.35600 1154.34800
+<CMD> zoomBox -511.88200 -151.50600 708.64400 880.20900
+<CMD> zoomBox -357.79900 -103.62900 679.64800 773.32900
+<CMD> zoomBox -244.02500 -78.12300 637.80600 667.29200
+<CMD> zoomBox 74.81700 -12.00300 535.14000 377.11000
+<CMD> zoomBox 339.05800 59.08900 512.67000 205.84400
+<CMD> zoomBox 243.24100 29.75700 525.94000 268.72400
+<CMD> zoomBox 204.74400 16.06700 537.33300 297.20600
+<CMD> zoomBox 161.72400 -0.14600 553.00600 330.60600
+<CMD> zoomBox 75.37300 -25.88600 616.94000 431.90300
+<CMD> zoomBox -46.26900 -61.30500 703.30700 572.31400
+<CMD> getIoFlowFlag
