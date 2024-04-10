@@ -26,12 +26,12 @@ set files [glob ../../../Verilog_files/*.v]
 #cd ~/ibex_syn/dc/ibex
 foreach file $files {
   read_verilog $file
-  #if {$file != "ibex_top.v"} {
-  #analyze -f verilog $file
-  #}
+  if {$file != "ibex_top.v"} {
+  analyze -f verilog $file
+  }
 }
 
-#elaborate ibex_top
+elaborate $top_level
 
 # List the names of the designs loaded in memory
 # Note: This command don't have any functionality for synthesis
