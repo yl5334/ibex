@@ -26,9 +26,7 @@ set files [glob ../../../Verilog_files/*.v]
 #cd ~/ibex_syn/dc/ibex
 foreach file $files {
   read_verilog $file
-  if {$file != "ibex_top.v"} {
   analyze -f verilog $file
-  }
 }
 
 elaborate $top_level
@@ -94,7 +92,9 @@ set_clock_gating_style  -num_stages 4 -setup 0.5
 
 
 ### operation_isolation ###
-set do_operand_isolation true
+##set do_operand_isolation true
+
+set power_enable_datapath_gating true
 
 set_scan_configuration -style multiplexed_flip_flop
 
@@ -128,11 +128,13 @@ current_design $top_level
 # Link the design
 link
 
-compile -map_effort med -boundary_optimization
+#compile -map_effort med -boundary_optimization
 
+
+#set_dont_touch {u_ibex_core}
 # Synthesize the design
 # Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
-compile_ultra -gate_clock
+compile_ultra -gate_clock -no_boundary
 
 
 ##################################################
