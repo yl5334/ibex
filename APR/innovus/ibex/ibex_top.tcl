@@ -86,33 +86,33 @@ sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
 
 # Create power stripes within the specified area
 ### TODO: You have to change below considering your floorplan
-addStripe -block_ring_top_layer_limit MG \
-          -block_ring_bottom_layer_limit M3 \
-          -padcore_ring_top_layer_limit MG \
-          -padcore_ring_bottom_layer_limit M3 \
-          -max_same_layer_jog_length 4 \
-          -merge_stripes_value 4 \
-          -layer MQ \
-          -set_to_set_distance 6 \
-          -width 2 \
-          -spacing 1 \
-          -nets {VDD VSS} \
-          -direction vertical \
-          -area {3 3 339 177}
+#addStripe -block_ring_top_layer_limit MG \
+#          -block_ring_bottom_layer_limit M3 \
+#          -padcore_ring_top_layer_limit MG \
+#          -padcore_ring_bottom_layer_limit M3 \
+#          -max_same_layer_jog_length 4 \
+#          -merge_stripes_value 4 \
+#          -layer MQ \
+#          -set_to_set_distance 6 \
+#          -width 2 \
+#          -spacing 1 \
+#          -nets {VDD VSS} \
+#          -direction vertical \
+#          -area {3 3 339 177}
 
-addStripe -block_ring_top_layer_limit MG \
-          -block_ring_bottom_layer_limit M3 \
-          -padcore_ring_top_layer_limit MG \
-          -padcore_ring_bottom_layer_limit M3 \
-          -max_same_layer_jog_length 4 \
-          -merge_stripes_value 4 \
-          -layer MG \
-          -set_to_set_distance 6 \
-          -width 2 \
-          -spacing 1 \
-          -nets {VDD VSS} \
-          -direction horizontal \
-          -area {3 3 339 177}
+#addStripe -block_ring_top_layer_limit MG \
+#          -block_ring_bottom_layer_limit M3 \
+#          -padcore_ring_top_layer_limit MG \
+#          -padcore_ring_bottom_layer_limit M3 \
+#          -max_same_layer_jog_length 4 \
+#          -merge_stripes_value 4 \
+#          -layer MG \
+#          -set_to_set_distance 6 \
+#          -width 2 \
+#          -spacing 1 \
+#          -nets {VDD VSS} \
+#          -direction horizontal \
+#          -area {3 3 339 177}
 
 sroute -nets {VDD} -padPinLayerRange {1 3} 
 sroute -nets {VSS} -padPinLayerRange {1 3} 
