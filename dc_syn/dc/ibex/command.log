@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version U-2022.12-SP7 for linux64 -- Oct 10, 2023
-#@ # Date:   Wed Apr 10 17:27:44 2024
+#@ # Date:   Wed Apr 10 17:48:04 2024
 #@ # Run by: yl5334@micro28
 #@ 
 
@@ -8946,7 +8946,7 @@ source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/i
 #@ #set_dont_touch {u_ibex_core}
 #@ # Synthesize the design
 #@ # Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
-#@ compile_ultra -gate_clock
+#@ compile_ultra -gate_clock -no_boundary_optimization
 #@ 
 #@ 
 #@ ##################################################
@@ -9221,4 +9221,4 @@ source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/i
 #@ #quit
 #@ # -- End source /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
 
-change_selection [get_cells u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i]
+quit
