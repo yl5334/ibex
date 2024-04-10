@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version U-2022.12-SP7 for linux64 -- Oct 10, 2023
-#@ # Date:   Wed Apr 10 16:34:13 2024
+#@ # Date:   Wed Apr 10 17:27:44 2024
 #@ # Run by: yl5334@micro28
 #@ 
 
@@ -8946,7 +8946,7 @@ source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/i
 #@ #set_dont_touch {u_ibex_core}
 #@ # Synthesize the design
 #@ # Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
-#@ compile_ultra -gate_clock -no_boundary
+#@ compile_ultra -gate_clock
 #@ 
 #@ 
 #@ ##################################################
@@ -9221,36 +9221,4 @@ source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/i
 #@ #quit
 #@ # -- End source /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
 
-change_selection [get_cells ibex_top]
-gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schematic:background_color -value black
-gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting zoomFitFactor -value 0.0
-change_selection [get_cells ibex_top]
-change_selection [get_cells ibex_top]
-change_selection [get_cells ibex_top]
-change_selection [get_cells gen_regfile_ff_register_file_i]
-change_selection [get_cells u_ibex_core]
-gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schematic:background_color -value black
-gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting zoomFitFactor -value 0.0
-gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schem_hierarchy:lineColor -value darkorange
-change_selection [get_cells u_ibex_core]
-change_selection [get_nets test_so]
-change_selection [get_cells ibex_top]
-change_selection [get_cells u_ibex_core]
-change_selection [get_cells u_fetch_enable_buf]
-change_selection [get_cells u_ibex_core]
-change_selection 
-change_selection [get_cells u_ibex_core/if_stage_i]
-gui_change_highlight -add -collection __slctBus72
-change_selection [get_cells u_ibex_core]
-gui_change_highlight -add -collection global
-change_selection [get_nets {clk_i scan_rst_ni test_si}]
-change_selection [get_cells u_ibex_core]
-change_selection 
-change_selection [get_cells u_ibex_core/if_stage_i]
-change_selection [get_cells u_ibex_core]
-change_selection 
-change_selection [get_cells core_clock_gate_i]
-change_selection [get_cells u_fetch_enable_buf]
-change_selection [get_cells u_rf_rdata_a_ecc_buf]
-change_selection [get_cells ibex_top]
-change_selection -remove [get_cells ibex_top]
+change_selection [get_cells u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i]

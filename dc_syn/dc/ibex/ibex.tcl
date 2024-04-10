@@ -137,7 +137,7 @@ link
 #set_dont_touch {u_ibex_core}
 # Synthesize the design
 # Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
-compile_ultra -gate_clock -no_boundary
+compile_ultra -gate_clock
 
 
 ##################################################
