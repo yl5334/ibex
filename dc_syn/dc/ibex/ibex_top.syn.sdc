@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Wed Apr 10 16:44:13 2024
+# Created by write_sdc on Wed Apr 10 17:37:31 2024
 
 ###################################################################
 set sdc_version 1.7
@@ -2082,6 +2082,222 @@ set_output_delay -clock clk_i  0.1  [get_ports alert_major_internal_o]
 set_output_delay -clock clk_i  0.1  [get_ports alert_major_bus_o]
 set_output_delay -clock clk_i  0.1  [get_ports core_sleep_o]
 set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_load_store_unit_i_data_type_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_load_store_unit_i_data_type_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_load_store_unit_i_data_type_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_load_store_unit_i_data_type_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_load_store_unit_i_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_load_store_unit_i_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_load_store_unit_i_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_load_store_unit_i_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fetch_addr_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fetch_addr_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fetch_addr_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fetch_addr_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_stored_addr_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_stored_addr_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_stored_addr_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_stored_addr_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_instr_addr_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_instr_addr_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_instr_addr_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_instr_addr_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_1/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_1/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_1/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_1/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_load_store_unit_i_addr_last_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_load_store_unit_i_addr_last_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_load_store_unit_i_addr_last_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_load_store_unit_i_addr_last_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_gen_prefetch_buffer_prefetch_buffer_i_fifo_i_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_id_stage_i_imd_val_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_instr_rdata_c_id_o_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+clk_gate_u_ibex_core_if_stage_i_instr_rdata_c_id_o_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_instr_rdata_c_id_o_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_u_ibex_core_if_stage_i_instr_rdata_c_id_o_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_ex_block_i_gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mtvec_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mtvec_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mtvec_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mtvec_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mtval_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mtval_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mtval_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mtval_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_dcsr_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_dcsr_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_dcsr_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_dcsr_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mstatus_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mstatus_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mstatus_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mstatus_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_mcycle_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mcause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mcause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mcause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mcause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mscratch_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mscratch_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mscratch_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mscratch_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_minstret_counter_i_counter_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_depc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_depc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_depc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_depc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mepc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mepc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mepc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mepc_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mstack_cause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -setup 0.5 [get_cells                             \
+u_ibex_core_cs_registers_i/clk_gate_u_mstack_cause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mstack_cause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+u_ibex_core_cs_registers_i/clk_gate_u_mstack_cause_csr_rdata_q_reg/main_gate]
+set_clock_gating_check -rise -setup 0.5 [get_cells                             \
 gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_10__rf_reg_q_reg/main_gate]
 set_clock_gating_check -fall -setup 0.5 [get_cells                             \
 gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_10__rf_reg_q_reg/main_gate]
@@ -2329,259 +2545,3 @@ set_clock_gating_check -rise -hold 0 [get_cells                                \
 gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_9__rf_reg_q_reg/main_gate]
 set_clock_gating_check -fall -hold 0 [get_cells                                \
 gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_9__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/load_store_unit_i/clk_gate_data_sign_ext_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/load_store_unit_i/clk_gate_data_sign_ext_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/load_store_unit_i/clk_gate_data_sign_ext_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/load_store_unit_i/clk_gate_data_sign_ext_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_md_state_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/clk_gate_illegal_c_insn_id_o_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/clk_gate_illegal_c_insn_id_o_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/clk_gate_illegal_c_insn_id_o_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/clk_gate_illegal_c_insn_id_o_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]
