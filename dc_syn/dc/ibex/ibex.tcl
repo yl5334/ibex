@@ -31,7 +31,9 @@ foreach file $files {
   }
 }
 
+
 elaborate $top_level
+
 
 # List the names of the designs loaded in memory
 # Note: This command don't have any functionality for synthesis
@@ -88,6 +90,7 @@ source -verbose "./timing.tcl"
 set_fix_multiple_port_nets -all -buffer_constants
 
 
+set_dont_touch {prim_generic_buf prim_generic_buf_Width4 prim_generic_buf_s00000020}
 
 ### CLOCK_GATING ###
 set_clock_gating_style  -num_stages 4 -setup 0.5
