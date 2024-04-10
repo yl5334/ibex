@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP5-1 for linux64 -- Mar 08, 2019
-#@ # Date:   Wed Apr  3 16:35:19 2024
-#@ # Run by: yl5334@cadpc28
+#@ # Date:   Tue Apr  9 22:24:58 2024
+#@ # Run by: yl5334@cadpc20
 #@ 
 
 source /tools/synopsys/syn/O-2018.06-SP5-1/admin/setup/.synopsys_dc.setup
@@ -6632,23 +6632,9 @@ source /tools/synopsys/syn/O-2018.06-SP5-1/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /tools/synopsys/syn/O-2018.06-SP5-1/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
-#@ # -- Starting source /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
-
-#@ #########################################
-#@ # TCL script for Design Compiler        #
-#@ # MS 2015                               #
-#@ #########################################
-#@ 
-#@ ##################################################
-#@ # Read design and library
-#@ ##################################################
-#@ 
-#@ # Set the top_level name
-#@ set top_level ibex_top
-#@ 
-#@ # In this file, libray path and libraries which are used are defined
-#@ source -verbose "../common_scripts/common.tcl" 
+set top_level ibex_top
+# In this file, libray path and libraries which are used are defined
+source -verbose "../common_scripts/common.tcl"
 #@ # -- Starting source ../common_scripts/common.tcl
 
 #@ # TCL script for Design Compiler
@@ -6672,239 +6658,49 @@ source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/i
 #@ set target_library "/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db"
 #@ # -- End source ../common_scripts/common.tcl
 
-#@ 
-#@ set hdlin_enable_rtldrc_info true
-#@ 
-#@ # Read verilog files
-#@ #read_verilog $(ls ~/ibex/rtl/*.sv)
-#@ 
-#@ #find ~/ibex/rtl/ -name "*.sv" | xargs echo read_verilog
-#@ 
-#@ set files [glob ../../../Verilog_files/*.v]
-#@ #cd ~/ibex/rtl
-#@ #read_sverilog ibex_alu.sv
-#@ #cd ~/ibex_syn/dc/ibex
-#@ foreach file $files {
-#@   read_verilog $file
-#@   analyze -f verilog $file
-#@ }
-#@ 
-#@ elaborate ibex_top
-#@ 
-#@ # List the names of the designs loaded in memory
-#@ # Note: This command don't have any functionality for synthesis
-#@ #       This is for debugging
-#@ list_designs
-#@ 
-#@ # Check errors
-#@ if { [check_error -v] == 1 } { exit 1 }
-#@ 
-#@ # Set the current design
-#@ # Note: The active design is called the current design
-#@ #       Most commands are specific to the current design
-#@ current_design $top_level
-#@ 
-#@ # Link the design
-#@ # Note: The design must be connected to all the library components and designs if references
-#@ #       For each subdesign, a reference and a link must exist between the subdesign and a design or component
-#@ #       in the link libraries
-#@ link
-#@ 
-#@ 
-#@ 
-#@ 
-#@ ##################################################
-#@ # Define design rule constraints                    
-#@ ##################################################
-#@ 
-#@ # Set maximum fanout of gates
-#@ # Note: This command sets the maximum allowable fanout load for the listed input ports
-#@ #       The object lists specifies a list of input ports and/or designs on which the max_fanout attribute is to be set
-#@ set_max_fanout 4 $top_level
-#@ set_max_fanout 4 [all_inputs]
-#@ 
-#@ # Set a maximum capacitance for the nets attached to named ports or to all the nets in a design
-#@ set_max_capacitance 0.005 [all_inputs]
-#@ 
-#@ # Verify the design consistency
-#@ # Note: This command reports an error that DC cannot resolve or a warning
-#@ check_design
-#@ 
-#@ 
-#@ ##################################################
-#@ # Define design optimization constraints
-#@ ##################################################
-#@ 
-#@ # Set timing environment through another .tcl file
-#@ source -verbose "./timing.tcl"
-#@ # -- Starting source ./timing.tcl
-
-#@ # TCL script of timing setup for synthesis
-#@ 
-#@ # Time unit: 1ns (in the IBM power-delivery library)
-#@ # Capacitance unit: 1pF (in the IBM power-delivery library)
-#@ 
-#@ ##################################################
-#@ # Define the clock timing
-#@ ################################################## 
-#@ 
-#@ # Variables for clock
-#@ set clk_period 10
-#@ set clk_uncertainty 0.01
-#@ set clk_transition 0.01
-#@ 
-#@ set clk_name "clk_i"
-#@ set clk_port "clk_i	"
-#@ 
-#@ # Create a clock if clock port is found
-#@ if {[sizeof_collection [get_ports $clk_port]] > 0} {
-#@ 
-#@     # Create a clock object and define its waveform in the current design
-#@     # Note: source_objects are the pin or port where the clock waveform is applied to the design
-#@     #       If no waveform is specified, 50% duty cycle is assumed
-#@     create_clock $clk_port -name $clk_name -period $clk_period
-#@ 
-#@     # Set the rise_drive or fall_drive attributes to the specified resistance values on the specified input and inout ports
-#@     # Note: For heavily loaded driving ports, such as clock lines, keep the drive strength seeeting 0 so that DC does not buffer the net
-#@     set_drive 0 [get_clocks $clk_name] 
-#@ }
-#@ 
-#@ # Create virtual clock if clock port is not found
-#@ if {[sizeof_collection [get_ports $clk_port]] == 0} {
-#@ 
-#@     # Create a clock object and define its waveform in the current design
-#@     # Note: source_objects are the pin or port where the clock waveform is applied to the design
-#@     #       If no waveform is specified, 50% duty cycle is assumed
-#@     set clk_name vclk
-#@     create_clock -period $clk_period -name vclk
-#@ 
-#@     # Set the rise_drive or fall_drive attributes to the specified resistance values on the specified input and inour ports
-#@     # Note: For heavily loaded driving ports, such as clock lines, keep the drive strength seeeting 0 so that DC does not buffer the net
-#@     set_drive 0 [get_clocks $clk_name] 
-#@ }
-#@ 
-#@ # Set clock uncertainty (skew)
-#@ # Note: This command considers different clock arrival time to FFs
-#@ set_clock_uncertainty $clk_uncertainty [get_clocks $clk_name]
-#@ 
-#@ # Set the transition time at the clock pins of all sequential devices clocked by the specified ideal clocks
-#@ set_clock_transition $clk_transition [get_clocks $clk_name]
-#@ 
-#@ # Fix hold violations at registers during compilation
-#@ # Note: If fix_hold or min_delay is specified, the minimum delay is a secondary optimization cost
-#@ #       DC inserts more buffers to solve the hold violations
-#@ set_fix_hold [all_clocks]
-#@ 
-#@ # Prevent cells and nets from being modified or replaced during optimization
-#@ # Note: Placing a dont_touch_network on a clock object prevents the toll from buffering the clock network
-#@ #       If dont_touch_network is set, DC reports violations (e.g. fanout) but does not modify the network during optimization
-#@ set_dont_touch_network $clk_port
-#@ 
-#@ # Mark ports and pins as sources of ideal networks
-#@ # Note: This command disables the timing update and optimization of cells and nets in the fanout of the specified objects
-#@ set_ideal_network      $clk_port
-#@ 
-#@ 
-#@ ##################################################
-#@ # Define the input and output ports' timing
-#@ ################################################## 
-#@ 
-#@ # Varaibles for input/output delay
-#@ set typical_input_delay 0.1
-#@ set typical_output_delay 0.1
-#@ set typical_wire_load 0.005
-#@ 
-#@ # Specifiy drive characteristics on ports that are driven by cells in the technology library
-#@ set_driving_cell -lib_cell INVX1TS [all_inputs]
-#@ 
-#@ # Define the arrival time for input ports
-#@ # Note: We define the input delay constraint relative to the system clock and to the other inputs
-#@ #       If data is stable (A) after the clock edge, input_delay is (A) (related to setup time)
-#@ set_input_delay $typical_input_delay [all_inputs] -clock $clk_name 
-#@ 
-#@ # Remove input delay on the specified pins or input ports
-#@ remove_input_delay -clock $clk_name [find port $clk_port]
-#@ 
-#@ # Set output delay on pins or output ports relative to a clock signal 
-#@ # Note: If data needs to be available (B) before the clock edge, output_delay is (B)
-#@ #       MIN & MAX delays are related to the shorest and longest path, respectively 
-#@ set_output_delay $typical_output_delay [all_outputs] -clock $clk_name
-#@ 
-#@ # Set a capacitive load value on input and output ports of the design
-#@ set_load 0.005 [all_outputs] 
-#@ # -- End source ./timing.tcl
-
-#@ 
-#@ # Set the fix_multiple_port_nets attribute to a specified value on the current design or a list of designs
-#@ # Note: '-all' option inserts buffers to the ports
-#@ #       '-buffer_constants' option inserts buffers to logic constants instead of duplicating them
-#@ set_fix_multiple_port_nets -all -buffer_constants
-#@ 
-#@ 
-#@ 
-#@ ### CLOCK_GATING ###
-#@ set_clock_gating_style  -num_stages 4 -setup 0.5
-#@ 
-#@ 
-#@ ### operation_isolation ###
-#@ set do_operand_isolation true
-#@ 
-#@ set_scan_configuration -style multiplexed_flip_flop
-#@ 
-#@ compile -scan
-#@ 
-#@ source DFT.tcl
-#@ # -- Starting source DFT.tcl
-
-#@ #set_dft_signal -view spec -type ScanDataIn -port SI
-#@ #set_dft_signal -view spec -type ScanDataOut -port test_so
-#@ set_dft_signal -view spec -type ScanEnable -port scan_rst_ni 
-#@ #set_scan_path chain1 -view existing_dft -scan_data_in test_si \-scan_data_out test_so
-#@ set_dft_signal -view existing_dft -view existing_dft -type ScanClock -port clk_i -timing [list 40 60]
-#@ set_dft_signal -view existing_dft -type Reset -port rst_ni -active_state 0
-#@ # -- End source DFT.tcl
-
-#@ 
-#@ create_test_protocol
-#@ 
-#@ dft_drc
-#@ 
-#@ set_scan_configuration -chain_count 4
-#@ 
-#@ preview_dft
-#@ 
-#@ insert_dft
-#@ 
-#@ 
-#@ 
-#@ 
-#@ ##################################################
-#@ # Optimize the design
-#@ ##################################################
-#@ 
-#@ # Verify the design consistency
-#@ check_design
-#@ 
-#@ # Set the current design
-#@ current_design $top_level
-#@ 
-#@ # Link the design
-#@ link
-#@ 
-#@ # Synthesize the design
-#@ # Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
-#@ compile_ultra -gate_clock
-#@ 
-#@ 
-#@ ##################################################
-#@ # Analyze and resolve design problems
-#@ ##################################################
-#@ 
-#@ # Verify the design consistency
-#@ check_design
-#@ 
-#@ # Rename modules, signals according to the naming rules
-#@ source -verbose "../common_scripts/namingrules.tcl"
+set hdlin_enable_rtldrc_info true
+# Read verilog files
+#read_verilog $(ls ~/ibex/rtl/*.sv)
+#find ~/ibex/rtl/ -name "*.sv" | xargs echo read_verilog
+set files [glob ../../../Verilog_files/*.v]
+#cd ~/ibex/rtl
+#read_sverilog ibex_alu.sv
+#cd ~/ibex_syn/dc/ibex
+foreach file $files {
+  read_verilog $file
+  #if {$file != "ibex_top.v"} {
+  #analyze -f verilog $file
+  #}
+}
+list_designs
+# Check errors
+if { [check_error -v] == 1 } { exit 1 }
+# Set the current design
+# Note: The active design is called the current design
+#       Most commands are specific to the current design
+current_design $top_level
+set_max_fanout 4 $top_level
+set_max_fanout 4 [all_inputs]
+# Set a maximum capacitance for the nets attached to named ports or to all the nets in a design
+set_max_capacitance 0.005 [all_inputs]
+# Verify the design consistency
+# Note: This command reports an error that DC cannot resolve or a warning
+check_design
+Set the current design
+current_design $top_level
+# Link the design
+link
+compile -map_effort med -boundary_optimization
+# Synthesize the design
+# Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
+compile_ultra -gate_clock
+##################################################
+# Analyze and resolve design problems
+##################################################
+# Verify the design consistency
+check_design
+# Rename modules, signals according to the naming rules
+source -verbose "../common_scripts/namingrules.tcl"
 #@ # -- Starting source ../common_scripts/namingrules.tcl
 
 #@ # Naming rules for consistent tool interface
@@ -6915,56 +6711,23 @@ source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/i
 #@ change_names -rules umich_naming_rules -verbose -hierarchy
 #@ # -- End source ../common_scripts/namingrules.tcl
 
-#@ 
-#@ report_clock_gating
-#@ 
-#@ # Generate a report file
-#@ set rpt_file "${top_level}.dc.rpt"
-#@ set maxpaths 20
-#@ 
-#@ check_design >> ${rpt_file}
-#@ 
-#@ report_area  >> ${rpt_file}
-#@ report_power -hier -analysis_effort medium >> ${rpt_file}
-#@ report_design >> ${rpt_file}
-#@ report_cell >> ${rpt_file}
-#@ report_port -verbose >> ${rpt_file}
-#@ report_compile_options >> ${rpt_file}
-#@ report_constraint -all_violators -verbose >> ${rpt_file}
-#@ report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
-#@ report_timing_requirements >> ${rpt_file} 
-#@ 
-#@ 
-#@ 
-#@ report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
-#@ report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
-#@ report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
-#@ report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
-#@ report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
-#@ 
-#@ 
-#@ ##################################################
-#@ # Save the design database 
-#@ ##################################################
-#@ 
-#@ # Generate structural verilog netlist
-#@ write -hierarchy -format verilog -output "${top_level}.nl.v"
-#@ 
-#@ # Write a Standard Delay Format (SDF) file
-#@ # Note : SDF is an IEEE standard for the representation and interpretation of timing data
-#@ #        The SDF file includes delays (module path, device, interconnect, and port), timing checks (setup, hold, recovery, skew, width, and period),
-#@ #        timing constraints (path and skew), incremental and absolute delays, and so on
-#@ write_sdf "${top_level}.syn.sdf"
-#@ 
-#@ # Write a SDC file
-#@ # Note : SDC is a format used to specify the design intent, including the timing, power and area constraints for a design
-#@ write_sdc "${top_level}.syn.sdc" -version 1.7
-#@ 
-#@ # Finish synthesis
-#@ #quit
-#@ # -- End source /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
-
-gui_start
+e -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
+#report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
+##################################################
+# Save the design database
+##################################################
+# Generate structural verilog netlist
+write -hierarchy -format verilog -output "${top_level}.nl.v"
+# Write a Standard Delay Format (SDF) file
+# Note : SDF is an IEEE standard for the representation and interpretation of timing data
+#        The SDF file includes delays (module path, device, interconnect, and port), timing checks (setup, hold, recovery, skew, width, and period),
+#        timing constraints (path and skew), incremental and absolute delays, and so on
+write_sdf "${top_level}.syn.sdf"
+# Write a SDC file
+# Note : SDC is a format used to specify the design intent, including the timing, power and area constraints for a design
+write_sdc "${top_level}.syn.sdc" -version 1.7
+# Finish synthesis
+start_gui
 #@ # -- Starting source /tools/synopsys/syn/O-2018.06-SP5-1/auxx/tcllib/lib/itk4.0.1/itk.tcl
 
 #@ #
@@ -43327,8 +43090,5 @@ gui_start
 
 change_selection [get_s ibex_top]
 change_selection [get_s ibex_top]
-xccv
-change_selection 
-change_selection [get_s test_si]
 change_selection [get_s ibex_top]
-change_selection [get_s test_si]
+link

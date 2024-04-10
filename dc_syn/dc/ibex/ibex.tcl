@@ -26,10 +26,12 @@ set files [glob ../../../Verilog_files/*.v]
 #cd ~/ibex_syn/dc/ibex
 foreach file $files {
   read_verilog $file
-  analyze -f verilog $file
+  #if {$file != "ibex_top.v"} {
+  #analyze -f verilog $file
+  #}
 }
 
-elaborate ibex_top
+#elaborate ibex_top
 
 # List the names of the designs loaded in memory
 # Note: This command don't have any functionality for synthesis
@@ -60,6 +62,8 @@ link
 # Set maximum fanout of gates
 # Note: This command sets the maximum allowable fanout load for the listed input ports
 #       The object lists specifies a list of input ports and/or designs on which the max_fanout attribute is to be set
+
+
 set_max_fanout 4 $top_level
 set_max_fanout 4 [all_inputs]
 
@@ -124,6 +128,8 @@ current_design $top_level
 # Link the design
 link
 
+compile -map_effort med -boundary_optimization
+
 # Synthesize the design
 # Note : This command performs a high-effort compile on the current design for better quality of results (QoR)
 compile_ultra -gate_clock
@@ -159,11 +165,11 @@ report_timing_requirements >> ${rpt_file}
 
 
 
-report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
-report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
-report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
-report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
-report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
+#report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
+#report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
+#report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
+#report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
+#report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
 
 
 ##################################################
@@ -182,6 +188,6 @@ write_sdf "${top_level}.syn.sdf"
 # Write a SDC file
 # Note : SDC is a format used to specify the design intent, including the timing, power and area constraints for a design
 write_sdc "${top_level}.syn.sdc" -version 1.7
-
+start_gui
 # Finish synthesis
 #quit
