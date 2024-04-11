@@ -20,10 +20,10 @@ init_design
 ##################################################
 
 set std_cell_height 3.6
-set core_width 504
+set core_width 540
 # core_height should be a multiple of the std_cell_height
 # Need to iterate the core width and height to make the density close to 0.7
-set core_height [expr 140*$std_cell_height]
+set core_height [expr 150*$std_cell_height]
 set ring_left_width 2.4
 set ring_right_width 2.4
 set ring_top_width 2.4
@@ -142,28 +142,28 @@ Puts "###"
 Puts "####################"
 
 # Specify the process technology value
-#setDesignMode -process 130 -flowEffort standard
+setDesignMode -process 130 -flowEffort standard
 
 # Specify a routing layer limit for Early Global Route
-#setMaxRouteLayer 3
+setMaxRouteLayer 3
 
 # Control certain aspects of how the software places cells
-#setPlaceMode -timingDriven true -congEffort high
+setPlaceMode -timingDriven true -congEffort high
 
 # Set global parameters for timing optimization
-#setOptMode -fixFanoutLoad true -effort high -moveInst true -reclaimArea true
+setOptMode -fixFanoutLoad true -effort high -moveInst true -reclaimArea true
 
 # Place stanard cells based on the global settings for placement, RC extraction, and timing analysis
-#place_design
+place_design
 
 #connect_std_cells_to_power
-#redraw
+redraw
 
 # Check FIXED and PLACED cells for violations, add violation markers to the design display area
-#checkPlace
+checkPlace
 
 # Build the static timing model of the design
-#buildTimingGraph
+buildTimingGraph
 
 
 ##################################################
@@ -178,11 +178,11 @@ Puts "###########################"
 
 # Perform timing optimization before or after the clock tree is built, or after routing and generate timing reports
 # Notes: '-preCTS' option performs timing optimization on the placed design, before the clock tree is built
-#optDesign -preCTS
+optDesign -preCTS
 
 # Save design
-#redraw
-#saveDesign "$design_name.placed.enc"
+redraw
+saveDesign "$design_name.placed.enc"
 
 
 ##################################################
@@ -198,46 +198,46 @@ Puts "############################"
 # Set global analysis modes for timing analysis
 # Notes: '-cppr' option removes pessimism from clock paths
 #        '-analysisType bcwc' option checks the design for two extreme conditions
-#setAnalysisMode -cppr both
-#setAnalysisMode -analysisType bcwc
+setAnalysisMode -cppr both
+setAnalysisMode -analysisType bcwc
 #
 ## Control certain aspects of how the NanoRoute router routes the design
-#setNanoRouteMode -quiet -routeTopRoutingLayer 3
+setNanoRouteMode -quiet -routeTopRoutingLayer 3
 #
 ## Create a new route type and set the routing properties for the nets
 ## Notes: 'preferred_routing_layer_effort' specify whether the preferred routing layer effort will be low, medium, or high
-#create_route_type -name top -preferred_routing_layer_effort medium -top_preferred_layer 3 -bottom_preferred_layer 2
-#create_route_type -name trunk -preferred_routing_layer_effort medium -top_preferred_layer 3 -bottom_preferred_layer 2
-#create_route_type -name leaf -preferred_routing_layer_effort medium -top_preferred_layer 3 -bottom_preferred_layer 2
+create_route_type -name top -preferred_routing_layer_effort medium -top_preferred_layer 3 -bottom_preferred_layer 2
+create_route_type -name trunk -preferred_routing_layer_effort medium -top_preferred_layer 3 -bottom_preferred_layer 2
+create_route_type -name leaf -preferred_routing_layer_effort medium -top_preferred_layer 3 -bottom_preferred_layer 2
 #
 ## Specify the route type
 ## Setting this property binds an existing user-defiend route_type to one or more types of clock tree nets
-#set_ccopt_property route_type -net_type top top
-#set_ccopt_property route_type -net_type trunk trunk
-#set_ccopt_property route_type -net_type leaf leaf
+set_ccopt_property route_type -net_type top top
+set_ccopt_property route_type -net_type trunk trunk
+set_ccopt_property route_type -net_type leaf leaf
 #
 ## Specify the buffer and inverter cells for CTS
-#set_ccopt_property inverter_cells [list CLKINVX1TS CLKINVX2TS CLKINVX3TS CLKINVX4TS CLKINVX6TS CLKINVX8TS CLKINVX12TS CLKINVX16TS CLKINVX20TS]
-#set_ccopt_property buffer_cells [list CLKBUFX2TS CLKBUFX3TS CLKBUFX4TS CLKBUFX6TS CLKBUFX8TS CLKBUFX12TS CLKBUFX16TS CLKBUFX20TS]
-#set_ccopt_property use_inverters true
+set_ccopt_property inverter_cells [list CLKINVX1TS CLKINVX2TS CLKINVX3TS CLKINVX4TS CLKINVX6TS CLKINVX8TS CLKINVX12TS CLKINVX16TS CLKINVX20TS]
+set_ccopt_property buffer_cells [list CLKBUFX2TS CLKBUFX3TS CLKBUFX4TS CLKBUFX6TS CLKBUFX8TS CLKBUFX12TS CLKBUFX16TS CLKBUFX20TS]
+set_ccopt_property use_inverters true
 #
 ## Specify the target skew for clock tree balancing
-#set_ccopt_property target_max_trans 500ps
-#set_ccopt_property target_skew 300ps
+set_ccopt_property target_max_trans 500ps
+set_ccopt_property target_skew 300ps
 #
 ## Create a clock tree network with associated skew groups and other CTS configuration settings
-#create_ccopt_clock_tree_spec -file ccopt_clock_tree.spec
-#source "./ccopt_clock_tree.spec"
+create_ccopt_clock_tree_spec -file ccopt_clock_tree.spec
+source "./ccopt_clock_tree.spec"
 #
 ## Perform clock concurrent optimization (CCOpt) on the current loaded design in Innovus
 ## CCOpt optimizes both the clock tree and the datapath to meet global timing constraints
-#ccopt_design
+ccopt_design
 #
 ## Save design
-#connect_std_cells_to_power
-#redraw
-#saveDesign "$design_name.clock.enc"
-#savePlace "$design_name.place"
+connect_std_cells_to_power
+redraw
+saveDesign "$design_name.clock.enc"
+savePlace "$design_name.place"
 
 
 ##################################################
@@ -251,26 +251,26 @@ Puts "###"
 Puts "###################################"
 
 # Unfix the clock nets to avoid routing problems
-#changeUseClockNetStatus -noFixedNetWires
+changeUseClockNetStatus -noFixedNetWires
 
 ############### Route resetn first ###############
 # Attach attributes to nets / Attaching the attributes allows the NanoRoute routing commands
-#setAttribute -net s -weight 5 -avoid_detour true -bottom_preferred_routing_layer 2 \
-#             -top_preferred_routing_layer 3 -preferred_extra_space 2
+setAttribute -net s -weight 5 -avoid_detour true -bottom_preferred_routing_layer 2 \
+             -top_preferred_routing_layer 3 -preferred_extra_space 2
 
 # Select a net and highlight it in the design display window
-#selectNet s
+selectNet resetn
 
 # Control certain aspects of how the NanoRoute router routes the design
-#setNanoRouteMode -quiet -routeWithTimingDriven true
-#setNanoRouteMode -quiet -routeSelectedNetOnly true
-#setNanoRouteMode -quiet -routeTopRoutingLayer 3
-#setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeSelectedNetOnly true
+setNanoRouteMode -quiet -routeTopRoutingLayer 3
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
 
 # Use the NanoRoute router to perform both global and detailed routing with one command
-#globalDetailRoute
+globalDetailRoute
 
-#redraw
+redraw
 ##################################################
 
 Puts "###########################"
@@ -374,14 +374,14 @@ Puts "############################"
 
 # Check width, spacing, and internal geometry of objects and the wiring between them
 # Create and save violation markers in the design database
-#verify_drc
+verify_drc
 
 # Add filler cells
 # Notes: '-cell' option specifies the list of filler cells to add
-#addFiller -cell fill1 -prefix IBM13_FILLER
+addFiller -cell fill1 -prefix IBM13_FILLER
 
-#verify_drc
-#redraw
+verify_drc
+redraw
 
 
 ##################################################
@@ -403,7 +403,7 @@ verify_drc
 verifyConnectivity -type regular -error 1000 -warning 50
 
 # Verify process antenna effect (PAE) and maximum floating area violations
-#verifyProcessAntenna
+verifyProcessAntenna
 
 
 ##################################################
@@ -417,7 +417,7 @@ Puts "###"
 Puts "#######################"
 
 # Report
-#report_power -leakage -cap -nworst -pg_pin -outfile "$design_name.power.rpt"
+report_power -leakage -cap -nworst -pg_pin -outfile "$design_name.power.rpt"
 
 # Generate hierarchical design abstract (LEF) information for the current routed block-level design
 write_lef_abstract "$design_name.lef" -5.7 -PgpinLayers {1 2 3 4 5} -specifyTopLayer 5 -stripePin
@@ -440,15 +440,15 @@ extractRC -outfile "$design_name.cap"
 rcOut -spef "$design_name.spef"
 
 # Write delays to a Standard Delay Format (SDF) file
-#write_sdf -version 2.1 "$design_name.sdf"
-#write_sdf -version 2.1 -target_application verilog "$design_name.verilog.sdf"
+write_sdf -version 2.1 "$design_name.sdf"
+write_sdf -version 2.1 -target_application verilog "$design_name.verilog.sdf"
 
 # Report hold/setup violation
-#setAnalysisMode -checkType hold -useDetailRC true
-#report_timing -check_type hold -nworst 10 > "$design_name.hold.rpt"
-#setAnalysisMode -checkType setup -useDetailRC true
-#report_timing -check_type setup -nworst 10 > "$design_name.setup.rpt"
-#reportCapViolation -outfile final_cap.tarpt
+setAnalysisMode -checkType hold -useDetailRC true
+report_timing -check_type hold -nworst 10 > "$design_name.hold.rpt"
+setAnalysisMode -checkType setup -useDetailRC true
+report_timing -check_type setup -nworst 10 > "$design_name.setup.rpt"
+reportCapViolation -outfile final_cap.tarpt
 
 # Run DRC and connection checks
 verifyGeometry
@@ -458,7 +458,7 @@ verifyConnectivity -type all
 summaryReport -outfile "$design_name.summary.rpt"
 
 # Generate a file containing a list of nets which have critical slack of the currently specified timing analysis mode
-#reportCritNet -outfile "$design_name.critnet.rpt"
+reportCritNet -outfile "$design_name.critnet.rpt"
 
 puts "########################################"
 puts "#                                      #"
