@@ -15,15 +15,19 @@ set_message -no_limit
 # Notes: At this script, all the settings are included in the file 'config.globals'
 init_design
 
+# load DEF file
+
+#loadDefFile -hier ../../../dc_syn/dc/ibex/$design_name.def
+
 ##################################################
 # Set the parameters for the floorplan
 ##################################################
 
 set std_cell_height 3.6
-set core_width 540
+set core_width 756
 # core_height should be a multiple of the std_cell_height
 # Need to iterate the core width and height to make the density close to 0.7
-set core_height [expr 150*$std_cell_height]
+set core_height [expr 210*$std_cell_height]
 set ring_left_width 2.4
 set ring_right_width 2.4
 set ring_top_width 2.4
@@ -80,43 +84,51 @@ applyGlobalNets
 
 redraw
 
+addRing -nets {VDD VSS} -type core_rings -layer {top M3 bottom M3 left M2 right M2} -width $ring_top_width \
+        -spacing $ring_top_space -center 1
+
+redraw
+
+
 # Routes power structures
 # Notes: This command should be used after creating power rings and power stripes
-sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
+
 
 # Create power stripes within the specified area
 ### TODO: You have to change below considering your floorplan
-#addStripe -block_ring_top_layer_limit MG \
-#          -block_ring_bottom_layer_limit M3 \
-#          -padcore_ring_top_layer_limit MG \
-#          -padcore_ring_bottom_layer_limit M3 \
-#          -max_same_layer_jog_length 4 \
-#          -merge_stripes_value 4 \
-#          -layer MQ \
-#          -set_to_set_distance 6 \
-#          -width 2 \
-#          -spacing 1 \
-#          -nets {VDD VSS} \
-#          -direction vertical \
-#          -area {3 3 339 177}
+addStripe -block_ring_top_layer_limit MG \
+          -block_ring_bottom_layer_limit M3 \
+          -padcore_ring_top_layer_limit MG \
+          -padcore_ring_bottom_layer_limit M3 \
+          -max_same_layer_jog_length 4 \
+          -merge_stripes_value 4 \
+          -layer MQ \
+          -set_to_set_distance 6 \
+          -width 2 \
+          -spacing 1 \
+          -nets {VDD VSS} \
+          -direction vertical \
+          -area {5 5 768 768}
 
-#addStripe -block_ring_top_layer_limit MG \
-#          -block_ring_bottom_layer_limit M3 \
-#          -padcore_ring_top_layer_limit MG \
-#          -padcore_ring_bottom_layer_limit M3 \
-#          -max_same_layer_jog_length 4 \
-#          -merge_stripes_value 4 \
-#          -layer MG \
-#          -set_to_set_distance 6 \
-#          -width 2 \
-#          -spacing 1 \
-#          -nets {VDD VSS} \
-#          -direction horizontal \
-#          -area {3 3 339 177}
+addStripe -block_ring_top_layer_limit MG \
+          -block_ring_bottom_layer_limit M3 \
+          -padcore_ring_top_layer_limit MG \
+          -padcore_ring_bottom_layer_limit M3 \
+          -max_same_layer_jog_length 4 \
+          -merge_stripes_value 4 \
+          -layer MG \
+          -set_to_set_distance 6 \
+          -width 2 \
+          -spacing 1 \
+          -nets {VDD VSS} \
+          -direction horizontal \
+          -area {5 5 768 768}
+
+sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
 
 sroute -nets {VDD} -padPinLayerRange {1 3} 
 sroute -nets {VSS} -padPinLayerRange {1 3} 
-
+saveDesign "$design_name.floorplan_power_ring.enc"
 
 ##################################################
 # Set all the input/output ports
@@ -147,6 +159,8 @@ setDesignMode -process 130 -flowEffort standard
 # Specify a routing layer limit for Early Global Route
 setMaxRouteLayer 3
 
+set delaycal_use_default_delay_limit 1000
+
 # Control certain aspects of how the software places cells
 setPlaceMode -timingDriven true -congEffort high
 
@@ -164,6 +178,8 @@ checkPlace
 
 # Build the static timing model of the design
 buildTimingGraph
+
+place_design -incremental
 
 
 ##################################################
@@ -255,11 +271,12 @@ changeUseClockNetStatus -noFixedNetWires
 
 ############### Route resetn first ###############
 # Attach attributes to nets / Attaching the attributes allows the NanoRoute routing commands
-setAttribute -net s -weight 5 -avoid_detour true -bottom_preferred_routing_layer 2 \
-             -top_preferred_routing_layer 3 -preferred_extra_space 2
+setAttribute -net rst_ni -weight 5 -avoid_detour true -preferred_extra_space 2
+-bottom_preferred_routing_layer 2 \
+             -top_preferred_routing_layer 3 
 
 # Select a net and highlight it in the design display window
-selectNet resetn
+selectNet rst_ni
 
 # Control certain aspects of how the NanoRoute router routes the design
 setNanoRouteMode -quiet -routeWithTimingDriven true
@@ -281,8 +298,7 @@ Puts "###########################"
 
 ############## Route all other nets ##############
 # Attach attributes to nets / Attaching the attributes allows the NanoRoute routing commands
-setAttribute -net * -weight 5 -avoid_detour true -bottom_preferred_routing_layer 1 \
-             -top_preferred_routing_layer 3 -preferred_extra_space 1
+setAttribute -net * -weight 5 -avoid_detour true -preferred_extra_space 1 -bottom_preferred_routing_layer 1 -top_preferred_routing_layer 3 
 
 # Select a net and highlight it in the design display window
 selectNet *
@@ -378,7 +394,7 @@ verify_drc
 
 # Add filler cells
 # Notes: '-cell' option specifies the list of filler cells to add
-addFiller -cell fill1 -prefix IBM13_FILLER
+addFiller -cell FILL16TS FILL1TS FILL2TS FILL32TS FILL4TS FILL64TS FILL8TS -prefix IBM13RFLPVT_FILLER
 
 verify_drc
 redraw
@@ -468,4 +484,4 @@ puts "# Innovus script finished              #"
 puts "#                                      #"
 puts "########################################"
 
-exit
+#exit

@@ -1,0 +1,4 @@
+DEFINE #2ereflib29367 .reflib29367
+ASSIGN #2ereflib29367 libMode nonShared
+DEFINE #2edesign29367 .design29367
+ASSIGN #2edesign29367 libMode nonShared

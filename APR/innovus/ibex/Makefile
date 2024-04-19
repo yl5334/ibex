@@ -1,5 +1,5 @@
 run:
-	innovus -nowin -init ibex.tcl
+	innovus -nowin -init ibex_top.tcl
 
 cdl:
 	perl v2lvs.pl ibex
