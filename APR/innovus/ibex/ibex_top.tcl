@@ -24,10 +24,17 @@ init_design
 ##################################################
 
 set std_cell_height 3.6
+<<<<<<< HEAD
 set core_width 756
 # core_height should be a multiple of the std_cell_height
 # Need to iterate the core width and height to make the density close to 0.7
 set core_height [expr 210*$std_cell_height]
+=======
+set core_width 547.2
+# core_height should be a multiple of the std_cell_height
+# Need to iterate the core width and height to make the density close to 0.7
+set core_height [expr 152*$std_cell_height]
+>>>>>>> 775ddffb16e1ac781c4811104d156b90e0a63bff
 set ring_left_width 2.4
 set ring_right_width 2.4
 set ring_top_width 2.4
