@@ -24,10 +24,10 @@ init_design
 ##################################################
 
 set std_cell_height 3.6
-set core_width 756
+set core_width 738
 # core_height should be a multiple of the std_cell_height
 # Need to iterate the core width and height to make the density close to 0.7
-set core_height [expr 210*$std_cell_height]
+set core_height [expr 205*$std_cell_height]
 set ring_left_width 2.4
 set ring_right_width 2.4
 set ring_top_width 2.4
@@ -108,7 +108,7 @@ addStripe -block_ring_top_layer_limit MG \
           -spacing 1 \
           -nets {VDD VSS} \
           -direction vertical \
-          -area {5 5 768 768}
+          -area {5 5 748 748}
 
 addStripe -block_ring_top_layer_limit MG \
           -block_ring_bottom_layer_limit M3 \
@@ -122,7 +122,7 @@ addStripe -block_ring_top_layer_limit MG \
           -spacing 1 \
           -nets {VDD VSS} \
           -direction horizontal \
-          -area {5 5 768 768}
+          -area {5 5 748 748}
 
 sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
 
@@ -195,6 +195,9 @@ Puts "###########################"
 # Perform timing optimization before or after the clock tree is built, or after routing and generate timing reports
 # Notes: '-preCTS' option performs timing optimization on the placed design, before the clock tree is built
 optDesign -preCTS
+
+#added
+#globalDetailRoute
 
 # Save design
 redraw
@@ -271,7 +274,7 @@ changeUseClockNetStatus -noFixedNetWires
 
 ############### Route resetn first ###############
 # Attach attributes to nets / Attaching the attributes allows the NanoRoute routing commands
-setAttribute -net rst_ni -weight 5 -avoid_detour true -preferred_extra_space 2
+setAttribute -net rst_ni -weight 5 -avoid_detour true -preferred_extra_space 2 \
 -bottom_preferred_routing_layer 2 \
              -top_preferred_routing_layer 3 
 
@@ -312,6 +315,8 @@ setNanoRouteMode -quiet -routeSelectedNetOnly false
 setNanoRouteMode -quiet -routeWithTimingDriven true
 setNanoRouteMode -quiet -routeTdrEffort 10
 setNanoRouteMode -quiet -drouteFixAntenna true
+
+
 setNanoRouteMode -quiet -routeWithSiDriven true
 setNanoRouteMode -quiet -routeSiLengthLimit 200
 setNanoRouteMode -quiet -routeSiEffort high
@@ -323,12 +328,14 @@ setNanoRouteMode -routeTopRoutingLayer 3
 setNanoRouteMode -routeBottomRoutingLayer 1
 
 globalDetailRoute
+
+
 redraw
 ##################################################
 
 
 ##################################################
-# Extract and optimize
+# Extract and optimize *****DRC Occurs
 ##################################################
 
 Puts "######################################"
@@ -348,7 +355,9 @@ extractRC
 # Notes: '-analysisType onChipVaration' option calculates the delay for one path based on maximum operation
 #        condition while calculating the delay for another path based on minimum operating condition
 #        for setup or hold checks
+
 setAnalysisMode -analysisType onChipVariation
+#setAnalysisMode -aocv true
 
 # Set global parameters for timing optimization
 setOptMode -yieldEffort none
@@ -374,6 +383,8 @@ globalNetConnect VDD -type tiehi
 globalNetConnect VSS -type tielo
 applyGlobalNets
 
+# added
+globalDetailRoute
 # Save design 
 saveDesign "$design_name.routed.enc"
 
