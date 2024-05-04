@@ -88,7 +88,7 @@ source -verbose "./timing.tcl"
 set_fix_multiple_port_nets -all -buffer_constants
 
 
-set_dont_touch {prim_generic_buf prim_generic_buf_Width4 prim_generic_buf_s00000020}
+#set_dont_touch {prim_generic_buf prim_generic_buf_Width4 prim_generic_buf_s00000020}
 
 ### CLOCK_GATING ###
 set_clock_gating_style  -num_stages 4 -setup 0.5
@@ -170,11 +170,11 @@ report_timing_requirements >> ${rpt_file}
 
 
 
-#report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
-#report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
-#report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
-#report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
-#report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
+report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
+report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
 
 
 ##################################################
@@ -190,9 +190,15 @@ write -hierarchy -format verilog -output "${top_level}.nl.v"
 #        timing constraints (path and skew), incremental and absolute delays, and so on
 write_sdf "${top_level}.syn.sdf"
 
+# write the scan def file
+write_scan_def -output "${top_level}.def"
+
 # Write a SDC file
 # Note : SDC is a format used to specify the design intent, including the timing, power and area constraints for a design
 write_sdc "${top_level}.syn.sdc" -version 1.7
+# write the DDC file which can be imported next time
+write -f ddc -hier -output "${top_level}.ddc"
+
 start_gui
 # Finish synthesis
 #quit
