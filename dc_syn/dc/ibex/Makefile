@@ -12,5 +12,3 @@ clean:
 	rm -rf *pvl
 	rm -rf *mr
 	rm -rf *pvk
-	rm -rf *def
-	rm -rf *ddc

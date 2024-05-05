@@ -13,7 +13,9 @@ set synthetic_library [list "dw_foundation.sldb"]
 #       When you load a design into memory, DC also loads all libraries specified in the link_library variable (For macros like RAM, ROM, PAD etc..)
 set link_library [list "*" \
                        "scx3_cmos8rf_lpvt_tt_1p2v_25c.db" \
-                       "dw_foundation.sldb"]
+                       "dw_foundation.sldb"\
+		       "../../../mem_db/imem_tt_1p2v_25c_syn.db"\
+		       "../../../mem_db/dmem_tt_1p2v_25c_syn.db" ]
 
 # Set the target library
 # Note: DC uses the target library to build a circuit
