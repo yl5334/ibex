@@ -142,7 +142,6 @@ redraw
 # Save the flooprlan information to a file (intermediate saving)
 saveDesign "$design_name.floorplan.enc"
 
-
 ##################################################
 # Place design
 ##################################################

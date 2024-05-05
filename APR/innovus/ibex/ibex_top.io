@@ -308,7 +308,7 @@ Pin: data_wdata_intg_o[0] N 2 0.2000 0.6000
 
 
 Offset: 26.4
-Spacing: 3
+Spacing: 3.0
 Pin: debug_req_i E 3 0.2000 0.6000
 Pin: crash_dump_o[159] E 2 0.2000 0.6000
 Pin: crash_dump_o[158] E 2 0.2000 0.6000
