@@ -1,0 +1,17 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN ibex_top ;
+
+SCANCHAINS 1 ;
+
+- 1
++ START PIN test_si
++ FLOATING core_busy_q_reg_0_ ( IN SI ) ( OUT QN )
++ PARTITION clk_i_40_40
++ STOP PIN test_so ;
+
+END SCANCHAINS
+
+END DESIGN

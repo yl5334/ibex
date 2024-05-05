@@ -1,0 +1,37 @@
+[05/05 16:50:34      0s] 
+[05/05 16:50:34      0s] Cadence Innovus(TM) Implementation System.
+[05/05 16:50:34      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/05 16:50:34      0s] 
+[05/05 16:50:34      0s] Version:	v21.16-s078_1, built Wed Dec 7 12:07:06 PST 2022
+[05/05 16:50:34      0s] Options:	
+[05/05 16:50:34      0s] Date:		Sun May  5 16:50:34 2024
+[05/05 16:50:34      0s] Host:		cadpc28 (x86_64 w/Linux 3.10.0-1160.118.1.el7.x86_64) (8cores*16cpus*11th Gen Intel(R) Core(TM) i9-11900 @ 2.50GHz 16384KB)
+[05/05 16:50:34      0s] OS:		Red Hat Enterprise Linux Workstation release 7.9 (Maipo)
+[05/05 16:50:34      0s] 
+[05/05 16:50:34      0s] License:
+[05/05 16:50:34      0s] 		[16:50:34.022425] Configured Lic search path (21.01-s002): 5280@bioeelincad.ee.columbia.edu
+
+[05/05 16:50:34      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[05/05 16:50:34      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/05 16:51:17     26s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.16-s078_1 (64bit) 12/07/2022 12:07 (Linux 3.10.0-693.el7.x86_64)
+[05/05 16:51:27     30s] @(#)CDS: NanoRoute 21.16-s078_1 NR221206-1807/21_16-UB (database version 18.20.600) {superthreading v2.17}
+[05/05 16:51:27     30s] @(#)CDS: AAE 21.16-s035 (64bit) 12/07/2022 (Linux 3.10.0-693.el7.x86_64)
+[05/05 16:51:27     30s] @(#)CDS: CTE 21.16-s024_1 () Dec  5 2022 05:41:45 ( )
+[05/05 16:51:27     30s] @(#)CDS: SYNTECH 21.16-s009_1 () Nov  9 2022 03:47:50 ( )
+[05/05 16:51:27     30s] @(#)CDS: CPE v21.16-s066
+[05/05 16:51:27     30s] @(#)CDS: IQuantus/TQuantus 21.1.1-s939 (64bit) Wed Nov 9 09:34:24 PST 2022 (Linux 3.10.0-693.el7.x86_64)
+[05/05 16:51:27     30s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[05/05 16:51:27     30s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/05 16:51:27     30s] @(#)CDS: RCDB 11.15.0
+[05/05 16:51:27     30s] @(#)CDS: STYLUS 21.12-s016_1 (10/12/2022 04:51 PDT)
+[05/05 16:51:27     30s] @(#)CDS: SystemPlanner-21.16Rel-9566 (21.16) (2022-11-01 15:06:10+0800)
+[05/05 16:51:27     30s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1454_cadpc28_yl5334_JWoDrV.
+
+[05/05 16:51:27     30s] Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+[05/05 16:51:32     33s] 
+[05/05 16:51:32     33s] **INFO:  MMMC transition support version v31-84 
+[05/05 16:51:32     33s] 
+[05/05 16:51:32     33s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/05 16:51:32     33s] <CMD> suppressMessage ENCEXT-2799
+[05/05 16:51:32     33s] <CMD> win
+[05/05 16:51:33     33s] <CMD> gui_group_hinst
