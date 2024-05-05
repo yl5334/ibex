@@ -9,8 +9,8 @@
 
 # Variables for clock
 set clk_period 100
-set clk_uncertainty 0.05
-set clk_transition 0.05
+set clk_uncertainty 0.01
+set clk_transition 0.01
 
 set clk_name "clk_i"
 set clk_port "clk_i	"

@@ -99,6 +99,10 @@ set_clock_gating_style  -num_stages 4 -setup 0.5
 
 set power_enable_datapath_gating true
 
+read_saif -input ./saif_files/CNN.saif -instance_name TOP/ibex_simple_system/u_top
+
+set power_enable_datapath_gating true
+
 set_scan_configuration -style multiplexed_flip_flop
 
 compile -scan
