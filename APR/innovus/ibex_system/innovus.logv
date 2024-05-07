@@ -4547,3 +4547,830 @@ Start AAE Lib Loading. (MEM=1610.57)
 [05/07 01:33:41   3814s] #	Totals       20      157       10        4      191
 [05/07 01:33:41   3814s] #cpu time = 00:01:30, elapsed time = 00:01:30, memory = 1437.74 (MB), peak = 1537.46 (MB)
 [05/07 01:33:41   3814s] #start 45th optimization iteration ...
+[05/07 01:35:22   3915s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:35:22   3915s] #   number of violations = 194
+[05/07 01:35:22   3915s] #
+[05/07 01:35:22   3915s] #    By Layer and Type :
+[05/07 01:35:22   3915s] #	         MetSpc    Short   CutSpc   CShort      Mar   Totals
+[05/07 01:35:22   3915s] #	M1            1        2        1        1        0        5
+[05/07 01:35:22   3915s] #	M2           18       30        5        0        1       54
+[05/07 01:35:22   3915s] #	M3            0      135        0        0        0      135
+[05/07 01:35:22   3915s] #	Totals       19      167        6        1        1      194
+[05/07 01:35:22   3915s] #cpu time = 00:01:41, elapsed time = 00:01:41, memory = 1437.45 (MB), peak = 1537.46 (MB)
+[05/07 01:35:22   3915s] #start 46th optimization iteration ...
+[05/07 01:36:43   3996s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:36:43   3996s] #   number of violations = 184
+[05/07 01:36:43   3996s] #
+[05/07 01:36:43   3996s] #    By Layer and Type :
+[05/07 01:36:43   3996s] #	         MetSpc    Short   CutSpc   CShort      Mar   Totals
+[05/07 01:36:43   3996s] #	M1            1        0        1        0        0        2
+[05/07 01:36:43   3996s] #	M2           18       30        5        1        1       55
+[05/07 01:36:43   3996s] #	M3            0      127        0        0        0      127
+[05/07 01:36:43   3996s] #	Totals       19      157        6        1        1      184
+[05/07 01:36:43   3996s] #cpu time = 00:01:21, elapsed time = 00:01:21, memory = 1436.07 (MB), peak = 1537.46 (MB)
+[05/07 01:36:43   3996s] #start 47th optimization iteration ...
+[05/07 01:37:53   4066s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:37:53   4066s] #   number of violations = 187
+[05/07 01:37:53   4066s] #
+[05/07 01:37:53   4066s] #    By Layer and Type :
+[05/07 01:37:53   4066s] #	         MetSpc    Short   CutSpc      Mar   Totals
+[05/07 01:37:53   4066s] #	M1            1        2        1        0        4
+[05/07 01:37:53   4066s] #	M2           19       27        3        1       50
+[05/07 01:37:53   4066s] #	M3            0      133        0        0      133
+[05/07 01:37:53   4066s] #	Totals       20      162        4        1      187
+[05/07 01:37:53   4066s] #cpu time = 00:01:10, elapsed time = 00:01:10, memory = 1436.50 (MB), peak = 1537.46 (MB)
+[05/07 01:37:53   4066s] #start 48th optimization iteration ...
+[05/07 01:39:35   4168s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:39:35   4168s] #   number of violations = 181
+[05/07 01:39:35   4168s] #
+[05/07 01:39:35   4168s] #    By Layer and Type :
+[05/07 01:39:35   4168s] #	         MetSpc    Short   CutSpc   CShort   Totals
+[05/07 01:39:35   4168s] #	M1            1        7        2        2       12
+[05/07 01:39:35   4168s] #	M2           18       24        5        1       48
+[05/07 01:39:35   4168s] #	M3            0      121        0        0      121
+[05/07 01:39:35   4168s] #	Totals       19      152        7        3      181
+[05/07 01:39:35   4168s] #cpu time = 00:01:42, elapsed time = 00:01:42, memory = 1435.73 (MB), peak = 1537.46 (MB)
+[05/07 01:39:35   4168s] #start 49th optimization iteration ...
+[05/07 01:40:36   4230s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:40:36   4230s] #   number of violations = 181
+[05/07 01:40:36   4230s] #
+[05/07 01:40:36   4230s] #    By Layer and Type :
+[05/07 01:40:36   4230s] #	         MetSpc    Short   CutSpc   CShort   Totals
+[05/07 01:40:36   4230s] #	M1            1        7        2        2       12
+[05/07 01:40:36   4230s] #	M2           18       24        5        1       48
+[05/07 01:40:36   4230s] #	M3            0      121        0        0      121
+[05/07 01:40:36   4230s] #	Totals       19      152        7        3      181
+[05/07 01:40:36   4230s] #cpu time = 00:01:02, elapsed time = 00:01:02, memory = 1437.93 (MB), peak = 1537.46 (MB)
+[05/07 01:40:36   4230s] #start 50th optimization iteration ...
+[05/07 01:41:43   4296s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:41:43   4296s] #   number of violations = 191
+[05/07 01:41:43   4296s] #
+[05/07 01:41:43   4296s] #    By Layer and Type :
+[05/07 01:41:43   4296s] #	         MetSpc    Short   CutSpc   CShort   Totals
+[05/07 01:41:43   4296s] #	M1            1        4        1        1        7
+[05/07 01:41:43   4296s] #	M2           18       26        5        5       54
+[05/07 01:41:43   4296s] #	M3            0      130        0        0      130
+[05/07 01:41:43   4296s] #	Totals       19      160        6        6      191
+[05/07 01:41:43   4296s] #cpu time = 00:01:06, elapsed time = 00:01:06, memory = 1436.28 (MB), peak = 1537.46 (MB)
+[05/07 01:41:43   4296s] #start 51th optimization iteration ...
+[05/07 01:43:01   4375s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:43:01   4375s] #   number of violations = 175
+[05/07 01:43:01   4375s] #
+[05/07 01:43:01   4375s] #    By Layer and Type :
+[05/07 01:43:01   4375s] #	         MetSpc    Short   CutSpc   CShort      Mar   Totals
+[05/07 01:43:01   4375s] #	M1            1        3        1        1        0        6
+[05/07 01:43:01   4375s] #	M2           17       28        4        2        1       52
+[05/07 01:43:01   4375s] #	M3            0      117        0        0        0      117
+[05/07 01:43:01   4375s] #	Totals       18      148        5        3        1      175
+[05/07 01:43:01   4375s] #cpu time = 00:01:19, elapsed time = 00:01:19, memory = 1437.43 (MB), peak = 1537.46 (MB)
+[05/07 01:43:01   4375s] #start 52th optimization iteration ...
+[05/07 01:44:10   4443s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:44:10   4443s] #   number of violations = 182
+[05/07 01:44:10   4443s] #
+[05/07 01:44:10   4443s] #    By Layer and Type :
+[05/07 01:44:10   4443s] #	         MetSpc    Short   CutSpc   CShort      Mar   Totals
+[05/07 01:44:10   4443s] #	M1            1        1        1        1        0        4
+[05/07 01:44:10   4443s] #	M2           18       31        5        0        1       55
+[05/07 01:44:10   4443s] #	M3            0      123        0        0        0      123
+[05/07 01:44:10   4443s] #	Totals       19      155        6        1        1      182
+[05/07 01:44:10   4443s] #cpu time = 00:01:08, elapsed time = 00:01:08, memory = 1437.30 (MB), peak = 1537.46 (MB)
+[05/07 01:44:10   4443s] #start 53th optimization iteration ...
+[05/07 01:45:35   4529s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:45:35   4529s] #   number of violations = 185
+[05/07 01:45:35   4529s] #
+[05/07 01:45:35   4529s] #    By Layer and Type :
+[05/07 01:45:35   4529s] #	         MetSpc    Short   CutSpc   CShort      Mar   Totals
+[05/07 01:45:35   4529s] #	M1            1        1        2        0        0        4
+[05/07 01:45:35   4529s] #	M2           18       29        3        1        1       52
+[05/07 01:45:35   4529s] #	M3            0      129        0        0        0      129
+[05/07 01:45:35   4529s] #	Totals       19      159        5        1        1      185
+[05/07 01:45:35   4529s] #cpu time = 00:01:26, elapsed time = 00:01:26, memory = 1436.01 (MB), peak = 1537.46 (MB)
+[05/07 01:45:35   4529s] #start 54th optimization iteration ...
+[05/07 01:46:50   4604s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:46:50   4604s] #   number of violations = 198
+[05/07 01:46:50   4604s] #
+[05/07 01:46:50   4604s] #    By Layer and Type :
+[05/07 01:46:50   4604s] #	         MetSpc    Short   CutSpc   CShort      Mar   Totals
+[05/07 01:46:50   4604s] #	M1            1        1        1        0        0        3
+[05/07 01:46:50   4604s] #	M2           18       28        6        1        1       54
+[05/07 01:46:50   4604s] #	M3            1      140        0        0        0      141
+[05/07 01:46:50   4604s] #	Totals       20      169        7        1        1      198
+[05/07 01:46:50   4604s] #cpu time = 00:01:15, elapsed time = 00:01:15, memory = 1437.96 (MB), peak = 1537.46 (MB)
+[05/07 01:46:50   4604s] #start 55th optimization iteration ...
+[05/07 01:48:01   4675s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:48:01   4675s] #   number of violations = 185
+[05/07 01:48:01   4675s] #
+[05/07 01:48:01   4675s] #    By Layer and Type :
+[05/07 01:48:01   4675s] #	         MetSpc    Short   CutSpc   CShort   Totals
+[05/07 01:48:01   4675s] #	M1            0        1        0        1        2
+[05/07 01:48:01   4675s] #	M2           17       28        8        1       54
+[05/07 01:48:01   4675s] #	M3            0      129        0        0      129
+[05/07 01:48:01   4675s] #	Totals       17      158        8        2      185
+[05/07 01:48:01   4675s] #cpu time = 00:01:11, elapsed time = 00:01:11, memory = 1436.82 (MB), peak = 1537.46 (MB)
+[05/07 01:48:01   4675s] #start 56th optimization iteration ...
+[05/07 01:49:33   4767s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:49:33   4767s] #   number of violations = 185
+[05/07 01:49:33   4767s] #
+[05/07 01:49:33   4767s] #    By Layer and Type :
+[05/07 01:49:33   4767s] #	         MetSpc    Short   CutSpc   CShort   Totals
+[05/07 01:49:33   4767s] #	M1            0        1        0        1        2
+[05/07 01:49:33   4767s] #	M2           17       28        8        1       54
+[05/07 01:49:33   4767s] #	M3            0      129        0        0      129
+[05/07 01:49:33   4767s] #	Totals       17      158        8        2      185
+[05/07 01:49:33   4767s] #cpu time = 00:01:32, elapsed time = 00:01:32, memory = 1436.46 (MB), peak = 1537.46 (MB)
+[05/07 01:49:33   4767s] #start 57th optimization iteration ...
+[05/07 01:50:26   4820s] ### Routing stats: routing = 62.12% drc-check-only = 15.85%
+[05/07 01:50:26   4820s] #   number of violations = 179
+[05/07 01:50:26   4820s] #
+[05/07 01:50:26   4820s] #    By Layer and Type :
+[05/07 01:50:26   4820s] #	         MetSpc    Short   CutSpc   CShort   Totals
+[05/07 01:50:26   4820s] #	M1            1        5        2        2       10
+[05/07 01:50:26   4820s] #	M2           17       25        5        2       49
+[05/07 01:50:26   4820s] #	M3            0      120        0        0      120
+[05/07 01:50:26   4820s] #	Totals       18      150        7        4      179
+[05/07 01:50:26   4820s] #cpu time = 00:00:53, elapsed time = 00:00:53, memory = 1438.45 (MB), peak = 1537.46 (MB)
+[05/07 01:50:26   4820s] #Complete Detail Routing.
+[05/07 01:50:26   4820s] #Total number of nets with non-default rule or having extra spacing = 659
+[05/07 01:50:26   4820s] #Total wire length = 447293 um.
+[05/07 01:50:26   4820s] #Total half perimeter of net bounding box = 311565 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER M1 = 145811 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER M2 = 195779 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER M3 = 105704 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER MQ = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER MG = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER LY = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER E1 = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER MA = 0 um.
+[05/07 01:50:26   4820s] #Total number of vias = 7491
+[05/07 01:50:26   4820s] #Total number of multi-cut vias = 4869 ( 65.0%)
+[05/07 01:50:26   4820s] #Total number of single cut vias = 2622 ( 35.0%)
+[05/07 01:50:26   4820s] #Up-Via Summary (total 7491):
+[05/07 01:50:26   4820s] #                   single-cut          multi-cut      Total
+[05/07 01:50:26   4820s] #-----------------------------------------------------------
+[05/07 01:50:26   4820s] # M1              1254 ( 36.3%)      2199 ( 63.7%)       3453
+[05/07 01:50:26   4820s] # M2              1368 ( 33.9%)      2670 ( 66.1%)       4038
+[05/07 01:50:26   4820s] #-----------------------------------------------------------
+[05/07 01:50:26   4820s] #                 2622 ( 35.0%)      4869 ( 65.0%)       7491 
+[05/07 01:50:26   4820s] #
+[05/07 01:50:26   4820s] #Total number of DRC violations = 179
+[05/07 01:50:26   4820s] #Total number of violations on LAYER M1 = 10
+[05/07 01:50:26   4820s] #Total number of violations on LAYER M2 = 49
+[05/07 01:50:26   4820s] #Total number of violations on LAYER M3 = 120
+[05/07 01:50:26   4820s] #Total number of violations on LAYER MQ = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER MG = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER LY = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER E1 = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER MA = 0
+[05/07 01:50:26   4820s] ### Time Record (Detail Routing) is uninstalled.
+[05/07 01:50:26   4820s] #Cpu time = 01:18:50
+[05/07 01:50:26   4820s] #Elapsed time = 01:18:49
+[05/07 01:50:26   4820s] #Increased memory = 65.78 (MB)
+[05/07 01:50:26   4820s] #Total memory = 1438.46 (MB)
+[05/07 01:50:26   4820s] #Peak memory = 1537.46 (MB)
+[05/07 01:50:26   4820s] ### Time Record (Antenna Fixing) is installed.
+[05/07 01:50:26   4820s] #
+[05/07 01:50:26   4820s] #start routing for process antenna violation fix ...
+[05/07 01:50:26   4820s] ### drc_pitch = 3920 (  3.9200 um) drc_range = 2480 (  2.4800 um) route_pitch = 1280 (  1.2800 um) patch_pitch = 6600 (  6.6000 um) top_route_layer = 3 top_pin_layer = 3
+[05/07 01:50:26   4820s] #
+[05/07 01:50:26   4820s] #    By Layer and Type :
+[05/07 01:50:26   4820s] #	         MetSpc    Short   CutSpc   CShort   Totals
+[05/07 01:50:26   4820s] #	M1            1        5        2        2       10
+[05/07 01:50:26   4820s] #	M2           17       25        5        2       49
+[05/07 01:50:26   4820s] #	M3            0      120        0        0      120
+[05/07 01:50:26   4820s] #	Totals       18      150        7        4      179
+[05/07 01:50:26   4820s] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1439.79 (MB), peak = 1537.46 (MB)
+[05/07 01:50:26   4820s] #
+[05/07 01:50:26   4820s] #Total number of nets with non-default rule or having extra spacing = 659
+[05/07 01:50:26   4820s] #Total wire length = 447297 um.
+[05/07 01:50:26   4820s] #Total half perimeter of net bounding box = 311565 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER M1 = 145811 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER M2 = 195745 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER M3 = 105741 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER MQ = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER MG = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER LY = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER E1 = 0 um.
+[05/07 01:50:26   4820s] #Total wire length on LAYER MA = 0 um.
+[05/07 01:50:26   4820s] #Total number of vias = 7671
+[05/07 01:50:26   4820s] #Total number of multi-cut vias = 4868 ( 63.5%)
+[05/07 01:50:26   4820s] #Total number of single cut vias = 2803 ( 36.5%)
+[05/07 01:50:26   4820s] #Up-Via Summary (total 7671):
+[05/07 01:50:26   4820s] #                   single-cut          multi-cut      Total
+[05/07 01:50:26   4820s] #-----------------------------------------------------------
+[05/07 01:50:26   4820s] # M1              1257 ( 36.4%)      2198 ( 63.6%)       3455
+[05/07 01:50:26   4820s] # M2              1546 ( 36.7%)      2670 ( 63.3%)       4216
+[05/07 01:50:26   4820s] #-----------------------------------------------------------
+[05/07 01:50:26   4820s] #                 2803 ( 36.5%)      4868 ( 63.5%)       7671 
+[05/07 01:50:26   4820s] #
+[05/07 01:50:26   4820s] #Total number of DRC violations = 179
+[05/07 01:50:26   4820s] #Total number of process antenna violations = 199
+[05/07 01:50:26   4820s] #Total number of net violated process antenna rule = 148
+[05/07 01:50:26   4820s] #Total number of violations on LAYER M1 = 10
+[05/07 01:50:26   4820s] #Total number of violations on LAYER M2 = 49
+[05/07 01:50:26   4820s] #Total number of violations on LAYER M3 = 120
+[05/07 01:50:26   4820s] #Total number of violations on LAYER MQ = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER MG = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER LY = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER E1 = 0
+[05/07 01:50:26   4820s] #Total number of violations on LAYER MA = 0
+[05/07 01:50:26   4820s] #
+[05/07 01:50:26   4820s] #WARNING (NRDR-309) There are more than 100 DRCs. The router will not invoke the process of delete and reroute to fix antenna violation. 
+[05/07 01:50:27   4820s] #
+[05/07 01:50:27   4820s] #Total number of nets with non-default rule or having extra spacing = 659
+[05/07 01:50:27   4820s] #Total wire length = 447297 um.
+[05/07 01:50:27   4820s] #Total half perimeter of net bounding box = 311565 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER M1 = 145811 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER M2 = 195745 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER M3 = 105741 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER MQ = 0 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER MG = 0 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER LY = 0 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER E1 = 0 um.
+[05/07 01:50:27   4820s] #Total wire length on LAYER MA = 0 um.
+[05/07 01:50:27   4820s] #Total number of vias = 7671
+[05/07 01:50:27   4820s] #Total number of multi-cut vias = 4868 ( 63.5%)
+[05/07 01:50:27   4820s] #Total number of single cut vias = 2803 ( 36.5%)
+[05/07 01:50:27   4820s] #Up-Via Summary (total 7671):
+[05/07 01:50:27   4820s] #                   single-cut          multi-cut      Total
+[05/07 01:50:27   4820s] #-----------------------------------------------------------
+[05/07 01:50:27   4820s] # M1              1257 ( 36.4%)      2198 ( 63.6%)       3455
+[05/07 01:50:27   4820s] # M2              1546 ( 36.7%)      2670 ( 63.3%)       4216
+[05/07 01:50:27   4820s] #-----------------------------------------------------------
+[05/07 01:50:27   4820s] #                 2803 ( 36.5%)      4868 ( 63.5%)       7671 
+[05/07 01:50:27   4820s] #
+[05/07 01:50:27   4820s] #Total number of DRC violations = 179
+[05/07 01:50:27   4820s] #Total number of process antenna violations = 199
+[05/07 01:50:27   4820s] #Total number of net violated process antenna rule = 148
+[05/07 01:50:27   4820s] #Total number of violations on LAYER M1 = 10
+[05/07 01:50:27   4820s] #Total number of violations on LAYER M2 = 49
+[05/07 01:50:27   4820s] #Total number of violations on LAYER M3 = 120
+[05/07 01:50:27   4820s] #Total number of violations on LAYER MQ = 0
+[05/07 01:50:27   4820s] #Total number of violations on LAYER MG = 0
+[05/07 01:50:27   4820s] #Total number of violations on LAYER LY = 0
+[05/07 01:50:27   4820s] #Total number of violations on LAYER E1 = 0
+[05/07 01:50:27   4820s] #Total number of violations on LAYER MA = 0
+[05/07 01:50:27   4820s] #
+[05/07 01:50:27   4820s] ### Time Record (Antenna Fixing) is uninstalled.
+[05/07 01:50:27   4820s] #detailRoute Statistics:
+[05/07 01:50:27   4820s] #Cpu time = 01:18:50
+[05/07 01:50:27   4820s] #Elapsed time = 01:18:49
+[05/07 01:50:27   4820s] #Increased memory = 67.13 (MB)
+[05/07 01:50:27   4820s] #Total memory = 1439.81 (MB)
+[05/07 01:50:27   4820s] #Peak memory = 1537.46 (MB)
+[05/07 01:50:27   4820s] ### global_detail_route design signature (130): route=193091581 flt_obj=0 vio=1446316145 shield_wire=1
+[05/07 01:50:27   4820s] ### Time Record (DB Export) is installed.
+[05/07 01:50:27   4820s] ### export design design signature (131): route=193091581 fixed_route=1883725846 flt_obj=0 vio=1446316145 swire=282492057 shield_wire=1 net_attr=1995460762 dirty_area=0 del_dirty_area=0 cell=0 placement=1895074627 pin_access=1 inst_pattern=1 via=1912239594 routing_via=2117892616
+[05/07 01:50:27   4820s] ### Time Record (DB Export) is uninstalled.
+[05/07 01:50:27   4820s] ### Time Record (Post Callback) is installed.
+[05/07 01:50:27   4820s] ### Time Record (Post Callback) is uninstalled.
+[05/07 01:50:27   4820s] #
+[05/07 01:50:27   4820s] #globalDetailRoute statistics:
+[05/07 01:50:27   4820s] #Cpu time = 01:19:35
+[05/07 01:50:27   4820s] #Elapsed time = 01:19:35
+[05/07 01:50:27   4820s] #Increased memory = 228.29 (MB)
+[05/07 01:50:27   4820s] #Total memory = 1435.24 (MB)
+[05/07 01:50:27   4820s] #Peak memory = 1537.46 (MB)
+[05/07 01:50:27   4820s] #Number of warnings = 3
+[05/07 01:50:27   4820s] #Total number of warnings = 6
+[05/07 01:50:27   4820s] #Number of fails = 0
+[05/07 01:50:27   4820s] #Total number of fails = 0
+[05/07 01:50:27   4820s] #Complete globalDetailRoute on Tue May  7 01:50:27 2024
+[05/07 01:50:27   4820s] #
+[05/07 01:50:27   4820s] ### Time Record (globalDetailRoute) is uninstalled.
+[05/07 01:50:27   4820s] ### 
+[05/07 01:50:27   4820s] ###   Scalability Statistics
+[05/07 01:50:27   4820s] ### 
+[05/07 01:50:27   4820s] ### --------------------------------+----------------+----------------+----------------+
+[05/07 01:50:27   4820s] ###   globalDetailRoute             |        cpu time|    elapsed time|     scalability|
+[05/07 01:50:27   4820s] ### --------------------------------+----------------+----------------+----------------+
+[05/07 01:50:27   4820s] ###   Pre Callback                  |        00:00:00|        00:00:00|             1.0|
+[05/07 01:50:27   4820s] ###   Post Callback                 |        00:00:00|        00:00:00|             1.0|
+[05/07 01:50:27   4820s] ###   Timing Data Generation        |        00:00:01|        00:00:02|             0.6|
+[05/07 01:50:27   4820s] ###   DB Import                     |        00:00:01|        00:00:01|             1.0|
+[05/07 01:50:27   4820s] ###   DB Export                     |        00:00:00|        00:00:00|             1.0|
+[05/07 01:50:27   4820s] ###   Cell Pin Access               |        00:00:00|        00:00:00|             1.0|
+[05/07 01:50:27   4820s] ###   Data Preparation              |        00:00:00|        00:00:00|             1.0|
+[05/07 01:50:27   4820s] ###   Global Routing                |        00:00:41|        00:00:41|             1.0|
+[05/07 01:50:27   4820s] ###   Track Assignment              |        00:00:01|        00:00:01|             1.0|
+[05/07 01:50:27   4820s] ###   Detail Routing                |        01:18:50|        01:18:49|             1.0|
+[05/07 01:50:27   4820s] ###   Antenna Fixing                |        00:00:00|        00:00:00|             1.0|
+[05/07 01:50:27   4820s] ###   Entire Command                |        01:19:35|        01:19:35|             1.0|
+[05/07 01:50:27   4820s] ### --------------------------------+----------------+----------------+----------------+
+[05/07 01:50:27   4820s] ### 
+[05/07 01:50:27   4821s] #% End globalDetailRoute (date=05/07 01:50:27, total cpu=1:19:35, real=1:19:36, peak res=1537.5M, current mem=1433.2M)
+[05/07 01:50:27   4821s] <CMD> redraw
+[05/07 01:50:27   4821s] <CMD> deselectAll
+[05/07 01:50:27   4821s] <CMD> selectInst u_ibex_top
+[05/07 01:50:41   4822s] <CMD> deselectAll
+[05/07 01:50:41   4822s] <CMD> selectInst u_sram
+[05/07 01:50:44   4822s] <CMD> deselectAll
+[05/07 01:50:44   4822s] <CMD> selectInst u_IMEM/imem0
+[05/07 01:50:47   4822s] <CMD> deselectAll
+[05/07 01:50:47   4822s] <CMD> selectInst u_DMEM/dmem0
+[05/07 01:50:50   4823s] <CMD> deselectAll
+[05/07 01:50:50   4823s] <CMD> selectInst u_ibex_top
+[05/07 01:51:52   4828s] <CMD> deselectAll
+[05/07 01:51:53   4828s] <CMD> setDrawView place
+[05/07 01:51:59   4828s] <CMD> setLayerPreference violation -isVisible 0
+[05/07 01:52:07   4829s] <CMD> setDrawView ameba
+[05/07 01:52:10   4829s] <CMD> setDrawView fplan
+[05/07 01:52:11   4830s] <CMD> setDrawView place
+[05/07 01:52:12   4830s] <CMD> setDrawView ameba
+[05/07 01:52:16   4830s] <CMD> setDrawView place
+[05/07 01:52:54   4833s] ##############
+[05/07 01:52:54   4833s] ###
+[05/07 01:52:54   4833s] ### Verify ...
+[05/07 01:52:54   4833s] ###
+[05/07 01:52:54   4833s] ##############
+[05/07 01:52:54   4833s] <CMD> clearDrc
+[05/07 01:52:54   4833s] <CMD> verify_drc
+[05/07 01:52:54   4833s] #-check_same_via_cell true               # bool, default=false, user setting
+[05/07 01:52:54   4833s]  *** Starting Verify DRC (MEM: 1808.9) ***
+[05/07 01:52:54   4833s] 
+[05/07 01:52:54   4833s] ### import design signature (132): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 via=1912239594 routing_via=2117892616
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Starting Verification
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Initializing
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Deleting Existing Violations
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Creating Sub-Areas
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Using new threading
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 151.040 158.720} 1 of 42
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Sub-Area: {151.040 0.000 302.080 158.720} 2 of 42
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+[05/07 01:52:54   4833s]   VERIFY DRC ...... Sub-Area: {302.080 0.000 453.120 158.720} 3 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {453.120 0.000 604.160 158.720} 4 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {604.160 0.000 755.200 158.720} 5 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {755.200 0.000 900.000 158.720} 6 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {0.000 158.720 151.040 317.440} 7 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {151.040 158.720 302.080 317.440} 8 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {302.080 158.720 453.120 317.440} 9 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {453.120 158.720 604.160 317.440} 10 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 10 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {604.160 158.720 755.200 317.440} 11 of 42
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area : 11 complete 0 Viols.
+[05/07 01:52:54   4834s]   VERIFY DRC ...... Sub-Area: {755.200 158.720 900.000 317.440} 12 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 12 complete 7 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {0.000 317.440 151.040 476.160} 13 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 13 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {151.040 317.440 302.080 476.160} 14 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 14 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {302.080 317.440 453.120 476.160} 15 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 15 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {453.120 317.440 604.160 476.160} 16 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 16 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {604.160 317.440 755.200 476.160} 17 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 17 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {755.200 317.440 900.000 476.160} 18 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 18 complete 44 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {0.000 476.160 151.040 634.880} 19 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 19 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {151.040 476.160 302.080 634.880} 20 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 20 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {302.080 476.160 453.120 634.880} 21 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 21 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {453.120 476.160 604.160 634.880} 22 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 22 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {604.160 476.160 755.200 634.880} 23 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 23 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {755.200 476.160 900.000 634.880} 24 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 24 complete 67 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {0.000 634.880 151.040 793.600} 25 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 25 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {151.040 634.880 302.080 793.600} 26 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 26 complete 37 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {302.080 634.880 453.120 793.600} 27 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 27 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {453.120 634.880 604.160 793.600} 28 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 28 complete 3 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {604.160 634.880 755.200 793.600} 29 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 29 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {755.200 634.880 900.000 793.600} 30 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 30 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {0.000 793.600 151.040 952.320} 31 of 42
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area : 31 complete 0 Viols.
+[05/07 01:52:55   4834s]   VERIFY DRC ...... Sub-Area: {151.040 793.600 302.080 952.320} 32 of 42
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area : 32 complete 0 Viols.
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area: {302.080 793.600 453.120 952.320} 33 of 42
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area : 33 complete 0 Viols.
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area: {453.120 793.600 604.160 952.320} 34 of 42
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area : 34 complete 0 Viols.
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area: {604.160 793.600 755.200 952.320} 35 of 42
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area : 35 complete 0 Viols.
+[05/07 01:52:55   4835s]   VERIFY DRC ...... Sub-Area: {755.200 793.600 900.000 952.320} 36 of 42
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area : 36 complete 0 Viols.
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area: {0.000 952.320 151.040 1100.000} 37 of 42
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area : 37 complete 0 Viols.
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area: {151.040 952.320 302.080 1100.000} 38 of 42
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area : 38 complete 0 Viols.
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area: {302.080 952.320 453.120 1100.000} 39 of 42
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area : 39 complete 0 Viols.
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area: {453.120 952.320 604.160 1100.000} 40 of 42
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area : 40 complete 0 Viols.
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area: {604.160 952.320 755.200 1100.000} 41 of 42
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area : 41 complete 0 Viols.
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area: {755.200 952.320 900.000 1100.000} 42 of 42
+[05/07 01:52:56   4835s]   VERIFY DRC ...... Sub-Area : 42 complete 0 Viols.
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s]   Verification Complete : 158 Viols.
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s]  Violation Summary By Layer and Type:
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] 	          Short   MetSpc   CutSpc   CShort   Totals
+[05/07 01:52:56   4835s] 	M1            4        1        0        0        5
+[05/07 01:52:56   4835s] 	V1            0        0        1        2        3
+[05/07 01:52:56   4835s] 	M2           24       17        0        0       41
+[05/07 01:52:56   4835s] 	V2            0        0        4        2        6
+[05/07 01:52:56   4835s] 	M3          103        0        0        0      103
+[05/07 01:52:56   4835s] 	Totals      131       18        5        4      158
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s]  *** End Verify DRC (CPU: 0:00:01.6  ELAPSED TIME: 2.00  MEM: 256.1M) ***
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] <CMD> verifyConnectivity -type regular -error 1000 -warning 50
+[05/07 01:52:56   4835s] VERIFY_CONNECTIVITY use new engine.
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] ******** Start: VERIFY CONNECTIVITY ********
+[05/07 01:52:56   4835s] Start Time: Tue May  7 01:52:56 2024
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] Design Name: ibex_system
+[05/07 01:52:56   4835s] Database Units: 1000
+[05/07 01:52:56   4835s] Design Boundary: (0.0000, 0.0000) (900.0000, 1100.0000)
+[05/07 01:52:56   4835s] Error Limit = 1000; Warning Limit = 50
+[05/07 01:52:56   4835s] Check specified nets
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] Begin Summary 
+[05/07 01:52:56   4835s]   Found no problems or warnings.
+[05/07 01:52:56   4835s] End Summary
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] End Time: Tue May  7 01:52:56 2024
+[05/07 01:52:56   4835s] Time Elapsed: 0:00:00.0
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] ******** End: VERIFY CONNECTIVITY ********
+[05/07 01:52:56   4835s]   Verification Complete : 0 Viols.  0 Wrngs.
+[05/07 01:52:56   4835s]   (CPU Time: 0:00:00.0  MEM: 0.000M)
+[05/07 01:52:56   4835s] 
+[05/07 01:52:56   4835s] #######################
+[05/07 01:52:56   4835s] ###
+[05/07 01:52:56   4835s] ### Produce Outputs ...
+[05/07 01:52:56   4835s] ###
+[05/07 01:52:56   4835s] #######################
+[05/07 01:52:56   4835s] <CMD> write_lef_abstract ibex_system.lef -5.7 -PgpinLayers {1 2 3 4 5} -specifyTopLayer 5 -stripePin
+[05/07 01:52:56   4835s] <CMD> defOut -floorplan -netlist -routing ibex_system.final.def
+[05/07 01:52:56   4835s] Writing DEF file 'ibex_system.final.def', current time is Tue May  7 01:52:56 2024 ...
+[05/07 01:52:56   4835s] unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+[05/07 01:52:57   4835s] DEF file 'ibex_system.final.def' is written, current time is Tue May  7 01:52:57 2024 ...
+[05/07 01:52:57   4835s] <CMD> streamOut ibex_system.gds -mapFile /courses/ee6321/share/ibm13rflpvt/mapfiles/enc2gds.map -libName ibm13rflpvt -structureName ibex_system -units 1000 -mode ALL
+[05/07 01:52:57   4835s] Parse flat map file...
+[05/07 01:52:58   4835s] Writing GDSII file ...
+[05/07 01:52:58   4835s] 	****** db unit per micron = 1000 ******
+[05/07 01:52:58   4835s] 	****** output gds2 file unit per micron = 1000 ******
+[05/07 01:52:58   4835s] 	****** unit scaling factor = 1 ******
+[05/07 01:52:58   4835s] Output for instance
+[05/07 01:52:58   4835s] Output for bump
+[05/07 01:52:58   4835s] Output for physical terminals
+[05/07 01:52:58   4835s] Output for logical terminals
+[05/07 01:52:58   4835s] Output for regular nets
+[05/07 01:52:58   4835s] Output for special nets and metal fills
+[05/07 01:52:58   4835s] Output for via structure generation total number 122
+[05/07 01:52:58   4835s] Statistics for GDS generated (version 3)
+[05/07 01:52:58   4835s] ----------------------------------------
+[05/07 01:52:58   4835s] Stream Out Layer Mapping Information:
+[05/07 01:52:58   4835s] GDS Layer Number          GDS Layer Name
+[05/07 01:52:58   4835s] ----------------------------------------
+[05/07 01:52:58   4835s]     6                            DIEAREA
+[05/07 01:52:58   4835s]     81                                MA
+[05/07 01:52:58   4835s]     128                               F1
+[05/07 01:52:58   4835s]     83                                E1
+[05/07 01:52:58   4835s]     84                                FT
+[05/07 01:52:58   4835s]     42                                LY
+[05/07 01:52:58   4835s]     86                                FY
+[05/07 01:52:58   4835s]     65                                MG
+[05/07 01:52:58   4835s]     18                                V2
+[05/07 01:52:58   4835s]     17                                M2
+[05/07 01:52:58   4835s]     15                                M1
+[05/07 01:52:58   4835s]     34                                MQ
+[05/07 01:52:58   4835s]     19                                M3
+[05/07 01:52:58   4835s]     16                                V1
+[05/07 01:52:58   4835s]     35                                VL
+[05/07 01:52:58   4835s]     33                                VQ
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Stream Out Information Processed for GDS version 3:
+[05/07 01:52:58   4835s] Units: 1000 DBU
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Object                             Count
+[05/07 01:52:58   4835s] ----------------------------------------
+[05/07 01:52:58   4835s] Instances                              4
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Ports/Pins                          1020
+[05/07 01:52:58   4835s]     metal layer M2                   332
+[05/07 01:52:58   4835s]     metal layer M3                   323
+[05/07 01:52:58   4835s]     metal layer MG                   365
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Nets                               12651
+[05/07 01:52:58   4835s]     metal layer M1                  2180
+[05/07 01:52:58   4835s]     metal layer M2                  6174
+[05/07 01:52:58   4835s]     metal layer M3                  4297
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s]     Via Instances                   7672
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Special Nets                        1104
+[05/07 01:52:58   4835s]     metal layer MQ                   552
+[05/07 01:52:58   4835s]     metal layer MG                   552
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s]     Via Instances                  32160
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Metal Fills                            0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s]     Via Instances                      0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Metal FillOPCs                         0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s]     Via Instances                      0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Metal FillDRCs                         0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s]     Via Instances                      0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Text                                1022
+[05/07 01:52:58   4835s]     metal layer M2                   332
+[05/07 01:52:58   4835s]     metal layer M3                   323
+[05/07 01:52:58   4835s]     metal layer MQ                     2
+[05/07 01:52:58   4835s]     metal layer MG                   365
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Blockages                              0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Custom Text                            0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Custom Box                             0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Trim Metal                             0
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] ######Streamout is finished!
+[05/07 01:52:58   4835s] <CMD> saveNetlist -phys -excludeLeafCell -excludeCellInst {FILL1TS FILL2TS FILL4TS FILL8TS FILL16TS FILL32TS FILL64TS fill1} ibex_system.phy.v
+[05/07 01:52:58   4835s] Writing Netlist "ibex_system.phy.v" ...
+[05/07 01:52:58   4835s] Pwr name (VDD).
+[05/07 01:52:58   4835s] Gnd name (VSS).
+[05/07 01:52:58   4835s] 1 Pwr names and 1 Gnd names.
+[05/07 01:52:58   4835s] <CMD> saveNetlist ibex_system.nophy.v
+[05/07 01:52:58   4835s] Writing Netlist "ibex_system.nophy.v" ...
+[05/07 01:52:58   4835s] <CMD> extractRC -outfile ibex_system.cap
+[05/07 01:52:58   4835s] Extraction called for design 'ibex_system' of instances=4 and nets=659 using extraction engine 'preRoute' .
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+[05/07 01:52:58   4835s] Type 'man IMPEXT-3530' for more detail.
+[05/07 01:52:58   4835s] PreRoute RC Extraction called for design ibex_system.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+[05/07 01:52:58   4835s] Type 'man IMPEXT-6197' for more detail.
+[05/07 01:52:58   4835s] RCMode: PreRoute
+[05/07 01:52:58   4835s] Capacitance Scaling Factor   : 1.00000
+[05/07 01:52:58   4835s] Resistance Scaling Factor    : 1.00000
+[05/07 01:52:58   4835s] Clock Cap Scaling Factor    : 1.00000
+[05/07 01:52:58   4835s] Clock Res Scaling Factor     : 1.00000
+[05/07 01:52:58   4835s] Shrink Factor                : 1.00000
+[05/07 01:52:58   4835s] PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+[05/07 01:52:58   4835s] 
+[05/07 01:52:58   4835s] Trim Metal Layers:
+[05/07 01:52:58   4835s] LayerId::1 widthSet size::1
+[05/07 01:52:58   4835s] LayerId::2 widthSet size::1
+[05/07 01:52:58   4835s] LayerId::3 widthSet size::1
+[05/07 01:52:58   4835s] LayerId::4 widthSet size::1
+[05/07 01:52:58   4835s] LayerId::5 widthSet size::1
+[05/07 01:52:58   4835s] LayerId::6 widthSet size::1
+[05/07 01:52:58   4835s] LayerId::7 widthSet size::1
+[05/07 01:52:58   4835s] LayerId::8 widthSet size::1
+[05/07 01:52:58   4835s] Updating RC grid for preRoute extraction ...
+[05/07 01:52:58   4835s] eee: pegSigSF::1.070000
+[05/07 01:52:58   4835s] PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 2061.016M)
+[05/07 01:52:58   4835s] <CMD> rcOut -spef ibex_system.spef
+[05/07 01:52:58   4835s]    RC-typical , Operating temperature 25 C
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_req_o is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[27] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[26] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[25] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[25] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[24] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[22] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[19] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[18] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[17] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_addr_o[16] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[30] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[27] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[26] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[23] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[22] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[19] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[18] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[17] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[16] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[15] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[14] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[11] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[10] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[7] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[6] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[5] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[4] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[3] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[2] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[1] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_o[0] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_wdata_intg_o[3] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[31] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[30] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[27] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[26] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[26] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[25] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[23] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[22] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[19] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[18] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[15] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[15] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[14] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[14] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[11] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[10] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[10] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[9] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[8] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[7] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[6] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[3] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net data_rdata_i[2] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4835s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[86] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[15] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[14] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[12] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[10] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[9] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[6] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[4] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[2] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s] **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net crash_dump_o[0] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+[05/07 01:52:58   4836s]  *** Starting Verify Geometry (MEM: 2061.0) ***
+[05/07 01:52:58   4836s] 
+[05/07 01:52:58   4836s] **WARN: (IMPVFG-257):	setVerifyGeometryMode/verifyGeometry command is obsolete and should not be used any more. It still works in this release but will be removed in future release. You should change to use set_verify_drc_mode/verify_drc which is the replacement tool for verifyGeometry.
+[05/07 01:52:58   4836s]   VERIFY GEOMETRY ...... Starting Verification
+[05/07 01:52:58   4836s]   VERIFY GEOMETRY ...... Initializing
+[05/07 01:52:58   4836s]   VERIFY GEOMETRY ...... Deleting Existing Violations
+[05/07 01:52:58   4836s]   VERIFY GEOMETRY ...... Creating Sub-Areas
+[05/07 01:52:58   4836s]                   ...... bin size: 2560
+[05/07 01:52:58   4836s]   VERIFY GEOMETRY ...... SubArea : 1 of 9
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... SubArea : 2 of 9
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... Sub-Area : 2 complete 0 Viols. 0 Wrngs.
+[05/07 01:53:02   4840s]   VERIFY GEOMETRY ...... SubArea : 3 of 9
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Wiring         :  19 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Sub-Area : 3 complete 19 Viols. 0 Wrngs.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... SubArea : 4 of 9
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... Sub-Area : 4 complete 0 Viols. 0 Wrngs.
+[05/07 01:53:03   4840s]   VERIFY GEOMETRY ...... SubArea : 5 of 9
+[05/07 01:53:03   4841s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:03   4841s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:03   4841s]   VERIFY GEOMETRY ...... Wiring         :  3 Viols.
+[05/07 01:53:03   4841s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:03   4841s]   VERIFY GEOMETRY ...... Sub-Area : 5 complete 3 Viols. 0 Wrngs.
+[05/07 01:53:03   4841s]   VERIFY GEOMETRY ...... SubArea : 6 of 9
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... SameNet        :  1 Viols.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... Wiring         :  98 Viols.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... Sub-Area : 6 complete 99 Viols. 0 Wrngs.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... SubArea : 7 of 9
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... Wiring         :  37 Viols.
+[05/07 01:53:04   4841s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:04   4842s]   VERIFY GEOMETRY ...... Sub-Area : 7 complete 37 Viols. 0 Wrngs.
+[05/07 01:53:04   4842s]   VERIFY GEOMETRY ...... SubArea : 8 of 9
+[05/07 01:53:04   4842s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:04   4842s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:04   4842s]   VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+[05/07 01:53:04   4842s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:05   4842s]   VERIFY GEOMETRY ...... Sub-Area : 8 complete 0 Viols. 0 Wrngs.
+[05/07 01:53:05   4842s]   VERIFY GEOMETRY ...... SubArea : 9 of 9
+[05/07 01:53:05   4842s]   VERIFY GEOMETRY ...... Cells          :  0 Viols.
+[05/07 01:53:05   4842s]   VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+[05/07 01:53:05   4842s]   VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+[05/07 01:53:05   4842s]   VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+[05/07 01:53:05   4842s]   VERIFY GEOMETRY ...... Sub-Area : 9 complete 0 Viols. 0 Wrngs.
+[05/07 01:53:05   4842s] VG: elapsed time: 7.00
+[05/07 01:53:05   4842s] Begin Summary ...
+[05/07 01:53:05   4842s]   Cells       : 0
+[05/07 01:53:05   4842s]   SameNet     : 1
+[05/07 01:53:05   4842s]   Wiring      : 22
+[05/07 01:53:05   4842s]   Antenna     : 0
+[05/07 01:53:05   4842s]   Short       : 135
+[05/07 01:53:05   4842s]   Overlap     : 0
+[05/07 01:53:05   4842s] End Summary
+[05/07 01:53:05   4842s] 
+[05/07 01:53:05   4842s]   Verification Complete : 158 Viols.  0 Wrngs.
+[05/07 01:53:05   4842s] 
+[05/07 01:53:05   4842s] **********End: VERIFY GEOMETRY**********
+[05/07 01:53:05   4842s]  *** verify geometry (CPU: 0:00:06.9  MEM: 256.1M)
+[05/07 01:53:05   4842s] 
+[05/07 01:53:05   4842s] <CMD> verifyConnectivity -type all
+[05/07 01:53:05   4842s] VERIFY_CONNECTIVITY use new engine.
+[05/07 01:53:05   4842s] 
+[05/07 01:53:05   4842s] ******** Start: VERIFY CONNECTIVITY ********
+[05/07 01:53:05   4842s] Start Time: Tue May  7 01:53:05 2024
+[05/07 01:53:05   4842s] 
+[05/07 01:53:05   4842s] Design Name: ibex_system
+[05/07 01:53:05   4842s] Database Units: 1000
+[05/07 01:53:05   4842s] Design Boundary: (0.0000, 0.0000) (900.0000, 1100.0000)
+[05/07 01:53:05   4842s] Error Limit = 1000; Warning Limit = 50
+[05/07 01:53:05   4842s] Check all nets
+[05/07 01:53:05   4843s] Net VDD: has an unconnected terminal, has special routes with opens, dangling Wire.
+[05/07 01:53:05   4843s] Net VSS: has an unconnected terminal, has special routes with opens, dangling Wire.
+[05/07 01:53:05   4843s] **WARN: (IMPVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+[05/07 01:53:05   4843s] Type 'man IMPVFC-3' for more detail.
+[05/07 01:53:05   4843s] 
+[05/07 01:53:05   4843s] Begin Summary 
+[05/07 01:53:05   4843s]     81 Problem(s) (IMPVFC-96): Terminal(s) are not connected.
+[05/07 01:53:05   4843s]     2 Problem(s) (IMPVFC-200): Special Wires: Pieces of the net are not connected together.
+[05/07 01:53:05   4843s]     917 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+[05/07 01:53:05   4843s]     1000 total info(s) created.
+[05/07 01:53:05   4843s] End Summary
+[05/07 01:53:05   4843s] 
+[05/07 01:53:05   4843s] End Time: Tue May  7 01:53:05 2024
+[05/07 01:53:05   4843s] Time Elapsed: 0:00:00.0
+[05/07 01:53:05   4843s] 
+[05/07 01:53:05   4843s] ******** End: VERIFY CONNECTIVITY ********
+[05/07 01:53:05   4843s]   Verification Complete : 1000 Viols.  0 Wrngs.
+[05/07 01:53:05   4843s]   (CPU Time: 0:00:00.3  MEM: 0.000M)
+[05/07 01:53:05   4843s] 
+[05/07 01:53:05   4843s] <CMD> summaryReport -outfile ibex_system.summary.rpt
+[05/07 01:53:05   4843s] Creating directory summaryReport.
+[05/07 01:53:05   4843s] Start to collect the design information.
+[05/07 01:53:05   4843s] Build netlist information for Cell ibex_system.
+[05/07 01:53:05   4843s] Finished collecting the design information.
+[05/07 01:53:05   4843s] Generating macro cells used in the design report.
+[05/07 01:53:05   4843s] Analyze library ... 
+[05/07 01:53:05   4843s] Analyze netlist ... 
+[05/07 01:53:05   4843s] Generate no-driven nets information report.
+[05/07 01:53:05   4843s] Generate multi-driven nets information report.
+[05/07 01:53:05   4843s] Analyze timing ... 
+[05/07 01:53:05   4843s] Analyze floorplan/placement ... 
+[05/07 01:53:06   4843s] All LLGs are deleted
+[05/07 01:53:06   4843s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/07 01:53:06   4843s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/07 01:53:06   4843s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:2317.1M, EPOCH TIME: 1715061186.099398
+[05/07 01:53:06   4843s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:2317.1M, EPOCH TIME: 1715061186.099651
+[05/07 01:53:06   4843s] OPERPROF: Starting spInitSiteArr at level 1, MEM:2317.1M, EPOCH TIME: 1715061186.100306
+[05/07 01:53:06   4843s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/07 01:53:06   4843s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/07 01:53:06   4843s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:2317.1M, EPOCH TIME: 1715061186.100975
+[05/07 01:53:06   4843s] Max number of tech site patterns supported in site array is 256.
+[05/07 01:53:06   4843s] Core basic site is IBM13SITE
+[05/07 01:53:06   4843s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:2317.1M, EPOCH TIME: 1715061186.124870
+[05/07 01:53:06   4843s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3d533020): Create thread pool 0x7f9c679be790.
+[05/07 01:53:06   4843s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3d533020): 0 out of 1 thread pools are available.
+[05/07 01:53:06   4843s] After signature check, allow fast init is false, keep pre-filter is false.
+[05/07 01:53:06   4843s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[05/07 01:53:06   4843s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.010, REAL:0.010, MEM:2445.1M, EPOCH TIME: 1715061186.134530
+[05/07 01:53:06   4843s] Use non-trimmed site array because memory saving is not enough.
+[05/07 01:53:06   4843s] SiteArray: non-trimmed site array dimensions = 305 x 2250
+[05/07 01:53:06   4843s] SiteArray: use 3,514,368 bytes
+[05/07 01:53:06   4843s] SiteArray: current memory after site array memory allocation 2448.5M
+[05/07 01:53:06   4843s] SiteArray: FP blocked sites are writable
+[05/07 01:53:06   4843s] OPERPROF:     Starting RoutingBlockageFromWireViaStBox at level 3, MEM:2448.5M, EPOCH TIME: 1715061186.158439
+[05/07 01:53:06   4843s] OPERPROF:     Finished RoutingBlockageFromWireViaStBox at level 3, CPU:0.090, REAL:0.089, MEM:2448.5M, EPOCH TIME: 1715061186.247774
+[05/07 01:53:06   4843s] SiteArray: number of non floorplan blocked sites for llg default is 686250
+[05/07 01:53:06   4843s] Atter site array init, number of instance map data is 0.
+[05/07 01:53:06   4843s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.150, REAL:0.163, MEM:2448.5M, EPOCH TIME: 1715061186.263680
+[05/07 01:53:06   4843s] 
+[05/07 01:53:06   4843s]  Pre_CCE_Colorizing is not ON! (0:0:535:0)
+[05/07 01:53:06   4843s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.170, REAL:0.179, MEM:2448.5M, EPOCH TIME: 1715061186.279136
+[05/07 01:53:06   4843s] All LLGs are deleted
+[05/07 01:53:06   4843s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:425).
+[05/07 01:53:06   4843s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[05/07 01:53:06   4843s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:2448.5M, EPOCH TIME: 1715061186.345031
+[05/07 01:53:06   4843s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:2448.5M, EPOCH TIME: 1715061186.345239
+[05/07 01:53:06   4843s] Analysis Routing ...
+[05/07 01:53:06   4843s] Report saved in file ibex_system.summary.rpt

@@ -64,3 +64,34 @@ setNanoRouteMode -quiet -drouteUseMultiCutViaEffort high
 setNanoRouteMode -routeTopRoutingLayer 3
 setNanoRouteMode -routeBottomRoutingLayer 1
 globalDetailRoute
+redraw
+deselectAll
+selectInst u_ibex_top
+deselectAll
+selectInst u_sram
+deselectAll
+selectInst u_IMEM/imem0
+deselectAll
+selectInst u_DMEM/dmem0
+deselectAll
+selectInst u_ibex_top
+deselectAll
+setDrawView place
+setLayerPreference violation -isVisible 0
+setDrawView ameba
+setDrawView fplan
+setDrawView place
+setDrawView ameba
+setDrawView place
+clearDrc
+verify_drc
+verifyConnectivity -type regular -error 1000 -warning 50
+write_lef_abstract ibex_system.lef -5.7 -PgpinLayers {1 2 3 4 5} -specifyTopLayer 5 -stripePin
+defOut -floorplan -netlist -routing ibex_system.final.def
+streamOut ibex_system.gds -mapFile /courses/ee6321/share/ibm13rflpvt/mapfiles/enc2gds.map -libName ibm13rflpvt -structureName ibex_system -units 1000 -mode ALL
+saveNetlist -phys -excludeLeafCell -excludeCellInst {FILL1TS FILL2TS FILL4TS FILL8TS FILL16TS FILL32TS FILL64TS fill1} ibex_system.phy.v
+saveNetlist ibex_system.nophy.v
+extractRC -outfile ibex_system.cap
+rcOut -spef ibex_system.spef
+verifyConnectivity -type all
+summaryReport -outfile ibex_system.summary.rpt
