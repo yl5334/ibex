@@ -1,0 +1,1 @@
+/homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex_top.syn.sdc

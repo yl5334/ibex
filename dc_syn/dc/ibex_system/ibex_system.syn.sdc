@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Sun May  5 17:28:46 2024
+# Created by write_sdc on Sun May  5 21:56:44 2024
 
 ###################################################################
 set sdc_version 1.7
@@ -87,6 +87,38 @@ set_driving_cell -lib_cell INVX1TS [get_ports {boot_addr_i[1]}]
 set_driving_cell -lib_cell INVX1TS [get_ports {boot_addr_i[0]}]
 set_driving_cell -lib_cell INVX1TS [get_ports instr_gnt_i]
 set_driving_cell -lib_cell INVX1TS [get_ports instr_rvalid_i]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[31]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[30]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[29]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[28]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[27]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[26]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[25]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[24]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[23]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[22]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[21]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[20]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[19]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[18]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[17]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[16]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[15]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[14]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[13]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[12]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[11]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[10]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[9]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[8]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[7]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[6]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[5]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[4]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[3]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[2]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[1]}]
+set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_i[0]}]
 set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_intg_i[6]}]
 set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_intg_i[5]}]
 set_driving_cell -lib_cell INVX1TS [get_ports {instr_rdata_intg_i[4]}]
@@ -355,58 +387,6 @@ set_driving_cell -lib_cell INVX1TS [get_ports {fetch_enable_i[2]}]
 set_driving_cell -lib_cell INVX1TS [get_ports {fetch_enable_i[1]}]
 set_driving_cell -lib_cell INVX1TS [get_ports {fetch_enable_i[0]}]
 set_driving_cell -lib_cell INVX1TS [get_ports scan_rst_ni]
-set_driving_cell -lib_cell INVX1TS [get_ports i_cen]
-set_driving_cell -lib_cell INVX1TS [get_ports i_wen]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[7]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[6]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[5]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[4]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[3]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[2]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[1]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_addr[0]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[31]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[30]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[29]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[28]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[27]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[26]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[25]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[24]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[23]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[22]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[21]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[20]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[19]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[18]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[17]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[16]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[15]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[14]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[13]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[12]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[11]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[10]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[9]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[8]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[7]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[6]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[5]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[4]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[3]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[2]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[1]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {i_data_w[0]}]
-set_driving_cell -lib_cell INVX1TS [get_ports d_cen]
-set_driving_cell -lib_cell INVX1TS [get_ports d_wen]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[7]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[6]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[5]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[4]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[3]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[2]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[1]}]
-set_driving_cell -lib_cell INVX1TS [get_ports {d_addr[0]}]
 set_load -pin_load 0.005 [get_ports instr_req_o]
 set_load -pin_load 0.005 [get_ports {instr_addr_o[31]}]
 set_load -pin_load 0.005 [get_ports {instr_addr_o[30]}]
@@ -478,6 +458,38 @@ set_load -pin_load 0.005 [get_ports {data_addr_o[3]}]
 set_load -pin_load 0.005 [get_ports {data_addr_o[2]}]
 set_load -pin_load 0.005 [get_ports {data_addr_o[1]}]
 set_load -pin_load 0.005 [get_ports {data_addr_o[0]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[31]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[30]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[29]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[28]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[27]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[26]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[25]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[24]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[23]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[22]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[21]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[20]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[19]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[18]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[17]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[16]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[15]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[14]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[13]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[12]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[11]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[10]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[9]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[8]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[7]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[6]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[5]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[4]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[3]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[2]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[1]}]
+set_load -pin_load 0.005 [get_ports {data_wdata_o[0]}]
 set_load -pin_load 0.005 [get_ports {data_wdata_intg_o[6]}]
 set_load -pin_load 0.005 [get_ports {data_wdata_intg_o[5]}]
 set_load -pin_load 0.005 [get_ports {data_wdata_intg_o[4]}]
@@ -651,38 +663,6 @@ set_load -pin_load 0.005 [get_ports alert_minor_o]
 set_load -pin_load 0.005 [get_ports alert_major_internal_o]
 set_load -pin_load 0.005 [get_ports alert_major_bus_o]
 set_load -pin_load 0.005 [get_ports core_sleep_o]
-set_load -pin_load 0.005 [get_ports {d_data_r[31]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[30]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[29]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[28]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[27]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[26]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[25]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[24]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[23]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[22]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[21]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[20]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[19]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[18]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[17]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[16]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[15]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[14]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[13]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[12]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[11]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[10]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[9]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[8]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[7]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[6]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[5]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[4]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[3]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[2]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[1]}]
-set_load -pin_load 0.005 [get_ports {d_data_r[0]}]
 set_max_capacitance 0.005 [get_ports clk_i]
 set_max_capacitance 0.005 [get_ports rst_ni]
 set_max_capacitance 0.005 [get_ports test_en_i]
@@ -762,6 +742,38 @@ set_max_capacitance 0.005 [get_ports {boot_addr_i[1]}]
 set_max_capacitance 0.005 [get_ports {boot_addr_i[0]}]
 set_max_capacitance 0.005 [get_ports instr_gnt_i]
 set_max_capacitance 0.005 [get_ports instr_rvalid_i]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[31]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[30]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[29]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[28]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[27]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[26]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[25]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[24]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[23]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[22]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[21]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[20]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[19]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[18]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[17]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[16]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[15]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[14]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[13]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[12]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[11]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[10]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[9]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[8]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[7]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[6]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[5]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[4]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[3]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[2]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[1]}]
+set_max_capacitance 0.005 [get_ports {instr_rdata_i[0]}]
 set_max_capacitance 0.005 [get_ports {instr_rdata_intg_i[6]}]
 set_max_capacitance 0.005 [get_ports {instr_rdata_intg_i[5]}]
 set_max_capacitance 0.005 [get_ports {instr_rdata_intg_i[4]}]
@@ -1030,58 +1042,6 @@ set_max_capacitance 0.005 [get_ports {fetch_enable_i[2]}]
 set_max_capacitance 0.005 [get_ports {fetch_enable_i[1]}]
 set_max_capacitance 0.005 [get_ports {fetch_enable_i[0]}]
 set_max_capacitance 0.005 [get_ports scan_rst_ni]
-set_max_capacitance 0.005 [get_ports i_cen]
-set_max_capacitance 0.005 [get_ports i_wen]
-set_max_capacitance 0.005 [get_ports {i_addr[7]}]
-set_max_capacitance 0.005 [get_ports {i_addr[6]}]
-set_max_capacitance 0.005 [get_ports {i_addr[5]}]
-set_max_capacitance 0.005 [get_ports {i_addr[4]}]
-set_max_capacitance 0.005 [get_ports {i_addr[3]}]
-set_max_capacitance 0.005 [get_ports {i_addr[2]}]
-set_max_capacitance 0.005 [get_ports {i_addr[1]}]
-set_max_capacitance 0.005 [get_ports {i_addr[0]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[31]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[30]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[29]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[28]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[27]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[26]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[25]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[24]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[23]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[22]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[21]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[20]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[19]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[18]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[17]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[16]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[15]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[14]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[13]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[12]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[11]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[10]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[9]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[8]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[7]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[6]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[5]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[4]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[3]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[2]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[1]}]
-set_max_capacitance 0.005 [get_ports {i_data_w[0]}]
-set_max_capacitance 0.005 [get_ports d_cen]
-set_max_capacitance 0.005 [get_ports d_wen]
-set_max_capacitance 0.005 [get_ports {d_addr[7]}]
-set_max_capacitance 0.005 [get_ports {d_addr[6]}]
-set_max_capacitance 0.005 [get_ports {d_addr[5]}]
-set_max_capacitance 0.005 [get_ports {d_addr[4]}]
-set_max_capacitance 0.005 [get_ports {d_addr[3]}]
-set_max_capacitance 0.005 [get_ports {d_addr[2]}]
-set_max_capacitance 0.005 [get_ports {d_addr[1]}]
-set_max_capacitance 0.005 [get_ports {d_addr[0]}]
 set_max_fanout 4 [get_ports clk_i]
 set_max_fanout 4 [get_ports rst_ni]
 set_max_fanout 4 [get_ports test_en_i]
@@ -1161,6 +1121,38 @@ set_max_fanout 4 [get_ports {boot_addr_i[1]}]
 set_max_fanout 4 [get_ports {boot_addr_i[0]}]
 set_max_fanout 4 [get_ports instr_gnt_i]
 set_max_fanout 4 [get_ports instr_rvalid_i]
+set_max_fanout 4 [get_ports {instr_rdata_i[31]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[30]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[29]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[28]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[27]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[26]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[25]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[24]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[23]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[22]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[21]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[20]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[19]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[18]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[17]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[16]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[15]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[14]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[13]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[12]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[11]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[10]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[9]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[8]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[7]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[6]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[5]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[4]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[3]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[2]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[1]}]
+set_max_fanout 4 [get_ports {instr_rdata_i[0]}]
 set_max_fanout 4 [get_ports {instr_rdata_intg_i[6]}]
 set_max_fanout 4 [get_ports {instr_rdata_intg_i[5]}]
 set_max_fanout 4 [get_ports {instr_rdata_intg_i[4]}]
@@ -1429,65 +1421,13 @@ set_max_fanout 4 [get_ports {fetch_enable_i[2]}]
 set_max_fanout 4 [get_ports {fetch_enable_i[1]}]
 set_max_fanout 4 [get_ports {fetch_enable_i[0]}]
 set_max_fanout 4 [get_ports scan_rst_ni]
-set_max_fanout 4 [get_ports i_cen]
-set_max_fanout 4 [get_ports i_wen]
-set_max_fanout 4 [get_ports {i_addr[7]}]
-set_max_fanout 4 [get_ports {i_addr[6]}]
-set_max_fanout 4 [get_ports {i_addr[5]}]
-set_max_fanout 4 [get_ports {i_addr[4]}]
-set_max_fanout 4 [get_ports {i_addr[3]}]
-set_max_fanout 4 [get_ports {i_addr[2]}]
-set_max_fanout 4 [get_ports {i_addr[1]}]
-set_max_fanout 4 [get_ports {i_addr[0]}]
-set_max_fanout 4 [get_ports {i_data_w[31]}]
-set_max_fanout 4 [get_ports {i_data_w[30]}]
-set_max_fanout 4 [get_ports {i_data_w[29]}]
-set_max_fanout 4 [get_ports {i_data_w[28]}]
-set_max_fanout 4 [get_ports {i_data_w[27]}]
-set_max_fanout 4 [get_ports {i_data_w[26]}]
-set_max_fanout 4 [get_ports {i_data_w[25]}]
-set_max_fanout 4 [get_ports {i_data_w[24]}]
-set_max_fanout 4 [get_ports {i_data_w[23]}]
-set_max_fanout 4 [get_ports {i_data_w[22]}]
-set_max_fanout 4 [get_ports {i_data_w[21]}]
-set_max_fanout 4 [get_ports {i_data_w[20]}]
-set_max_fanout 4 [get_ports {i_data_w[19]}]
-set_max_fanout 4 [get_ports {i_data_w[18]}]
-set_max_fanout 4 [get_ports {i_data_w[17]}]
-set_max_fanout 4 [get_ports {i_data_w[16]}]
-set_max_fanout 4 [get_ports {i_data_w[15]}]
-set_max_fanout 4 [get_ports {i_data_w[14]}]
-set_max_fanout 4 [get_ports {i_data_w[13]}]
-set_max_fanout 4 [get_ports {i_data_w[12]}]
-set_max_fanout 4 [get_ports {i_data_w[11]}]
-set_max_fanout 4 [get_ports {i_data_w[10]}]
-set_max_fanout 4 [get_ports {i_data_w[9]}]
-set_max_fanout 4 [get_ports {i_data_w[8]}]
-set_max_fanout 4 [get_ports {i_data_w[7]}]
-set_max_fanout 4 [get_ports {i_data_w[6]}]
-set_max_fanout 4 [get_ports {i_data_w[5]}]
-set_max_fanout 4 [get_ports {i_data_w[4]}]
-set_max_fanout 4 [get_ports {i_data_w[3]}]
-set_max_fanout 4 [get_ports {i_data_w[2]}]
-set_max_fanout 4 [get_ports {i_data_w[1]}]
-set_max_fanout 4 [get_ports {i_data_w[0]}]
-set_max_fanout 4 [get_ports d_cen]
-set_max_fanout 4 [get_ports d_wen]
-set_max_fanout 4 [get_ports {d_addr[7]}]
-set_max_fanout 4 [get_ports {d_addr[6]}]
-set_max_fanout 4 [get_ports {d_addr[5]}]
-set_max_fanout 4 [get_ports {d_addr[4]}]
-set_max_fanout 4 [get_ports {d_addr[3]}]
-set_max_fanout 4 [get_ports {d_addr[2]}]
-set_max_fanout 4 [get_ports {d_addr[1]}]
-set_max_fanout 4 [get_ports {d_addr[0]}]
 set_ideal_network [get_ports clk_i]
 create_clock [get_ports clk_i]  -period 10  -waveform {0 5}
 set_clock_uncertainty 0.01  [get_clocks clk_i]
-set_clock_transition -max -rise 0.01 [get_clocks clk_i]
-set_clock_transition -max -fall 0.01 [get_clocks clk_i]
-set_clock_transition -min -rise 0.01 [get_clocks clk_i]
 set_clock_transition -min -fall 0.01 [get_clocks clk_i]
+set_clock_transition -min -rise 0.01 [get_clocks clk_i]
+set_clock_transition -max -fall 0.01 [get_clocks clk_i]
+set_clock_transition -max -rise 0.01 [get_clocks clk_i]
 set_input_delay -clock clk_i  0.1  [get_ports rst_ni]
 set_input_delay -clock clk_i  0.1  [get_ports test_en_i]
 set_input_delay -clock clk_i  0.1  [get_ports {ram_cfg_i[9]}]
@@ -1566,6 +1506,38 @@ set_input_delay -clock clk_i  0.1  [get_ports {boot_addr_i[1]}]
 set_input_delay -clock clk_i  0.1  [get_ports {boot_addr_i[0]}]
 set_input_delay -clock clk_i  0.1  [get_ports instr_gnt_i]
 set_input_delay -clock clk_i  0.1  [get_ports instr_rvalid_i]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[31]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[30]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[29]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[28]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[27]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[26]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[25]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[24]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[23]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[22]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[21]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[20]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[19]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[18]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[17]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[16]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[15]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[14]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[13]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[12]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[11]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[10]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[9]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[8]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[7]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[6]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[5]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[4]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[3]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[2]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[1]}]
+set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_i[0]}]
 set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_intg_i[6]}]
 set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_intg_i[5]}]
 set_input_delay -clock clk_i  0.1  [get_ports {instr_rdata_intg_i[4]}]
@@ -1834,58 +1806,6 @@ set_input_delay -clock clk_i  0.1  [get_ports {fetch_enable_i[2]}]
 set_input_delay -clock clk_i  0.1  [get_ports {fetch_enable_i[1]}]
 set_input_delay -clock clk_i  0.1  [get_ports {fetch_enable_i[0]}]
 set_input_delay -clock clk_i  0.1  [get_ports scan_rst_ni]
-set_input_delay -clock clk_i  0.1  [get_ports i_cen]
-set_input_delay -clock clk_i  0.1  [get_ports i_wen]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[7]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[6]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[5]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[4]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[3]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[2]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[1]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_addr[0]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[31]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[30]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[29]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[28]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[27]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[26]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[25]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[24]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[23]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[22]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[21]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[20]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[19]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[18]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[17]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[16]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[15]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[14]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[13]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[12]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[11]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[10]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[9]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[8]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[7]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[6]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[5]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[4]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[3]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[2]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[1]}]
-set_input_delay -clock clk_i  0.1  [get_ports {i_data_w[0]}]
-set_input_delay -clock clk_i  0.1  [get_ports d_cen]
-set_input_delay -clock clk_i  0.1  [get_ports d_wen]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[7]}]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[6]}]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[5]}]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[4]}]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[3]}]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[2]}]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[1]}]
-set_input_delay -clock clk_i  0.1  [get_ports {d_addr[0]}]
 set_output_delay -clock clk_i  0.1  [get_ports instr_req_o]
 set_output_delay -clock clk_i  0.1  [get_ports {instr_addr_o[31]}]
 set_output_delay -clock clk_i  0.1  [get_ports {instr_addr_o[30]}]
@@ -1957,6 +1877,38 @@ set_output_delay -clock clk_i  0.1  [get_ports {data_addr_o[3]}]
 set_output_delay -clock clk_i  0.1  [get_ports {data_addr_o[2]}]
 set_output_delay -clock clk_i  0.1  [get_ports {data_addr_o[1]}]
 set_output_delay -clock clk_i  0.1  [get_ports {data_addr_o[0]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[31]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[30]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[29]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[28]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[27]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[26]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[25]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[24]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[23]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[22]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[21]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[20]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[19]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[18]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[17]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[16]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[15]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[14]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[13]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[12]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[11]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[10]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[9]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[8]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[7]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[6]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[5]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[4]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[3]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[2]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[1]}]
+set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_o[0]}]
 set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_intg_o[6]}]
 set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_intg_o[5]}]
 set_output_delay -clock clk_i  0.1  [get_ports {data_wdata_intg_o[4]}]
@@ -2130,547 +2082,3 @@ set_output_delay -clock clk_i  0.1  [get_ports alert_minor_o]
 set_output_delay -clock clk_i  0.1  [get_ports alert_major_internal_o]
 set_output_delay -clock clk_i  0.1  [get_ports alert_major_bus_o]
 set_output_delay -clock clk_i  0.1  [get_ports core_sleep_o]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[31]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[30]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[29]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[28]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[27]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[26]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[25]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[24]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[23]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[22]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[21]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[20]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[19]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[18]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[17]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[16]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[15]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[14]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[13]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[12]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[11]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[10]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[9]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[8]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[7]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[6]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[5]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[4]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[3]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[2]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[1]}]
-set_output_delay -clock clk_i  0.1  [get_ports {d_data_r[0]}]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_10__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_10__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_10__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_10__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_11__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_11__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_11__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_11__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_12__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_12__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_12__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_12__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_13__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_13__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_13__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_13__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_14__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_14__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_14__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_14__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_15__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_15__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_15__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_15__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_16__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_16__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_16__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_16__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_17__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_17__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_17__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_17__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_18__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_18__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_18__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_18__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_19__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_19__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_19__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_19__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_1__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_1__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_1__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_1__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_20__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_20__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_20__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_20__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_21__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_21__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_21__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_21__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_22__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_22__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_22__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_22__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_23__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_23__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_23__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_23__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_24__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_24__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_24__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_24__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_25__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_25__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_25__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_25__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_26__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_26__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_26__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_26__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_27__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_27__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_27__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_27__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_28__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_28__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_28__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_28__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_29__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_29__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_29__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_29__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_2__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_2__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_2__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_2__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_30__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_30__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_30__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_30__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_31__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_31__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_31__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_31__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_3__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_3__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_3__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_3__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_4__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_4__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_4__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_4__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_5__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_5__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_5__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_5__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_6__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_6__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_6__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_6__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_7__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_7__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_7__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_7__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_8__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_8__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_8__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_8__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_9__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_9__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_9__rf_reg_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/gen_regfile_ff_register_file_i/clk_gate_g_rf_flops_9__rf_reg_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/minstret_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/mcycle_counter_i/clk_gate_counter_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_epc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstack_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch1_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_depc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_dcsr_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mtval_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mcause_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mscratch_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mepc_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/cs_registers_i/u_mstatus_csr/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_offset_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_offset_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_offset_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_offset_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/load_store_unit_i/clk_gate_addr_last_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_quotient_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_quotient_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_quotient_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_quotient_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast_multdiv_i/clk_gate_op_numerator_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/id_stage_i/clk_gate_imd_val_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/clk_gate_pc_id_o_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/clk_gate_pc_id_o_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/clk_gate_pc_id_o_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/clk_gate_pc_id_o_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_fetch_addr_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/clk_gate_stored_addr_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_instr_addr_q_reg/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_1/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg_0/main_gate]
-set_clock_gating_check -rise -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -setup 0.5 [get_cells                             \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -rise -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]
-set_clock_gating_check -fall -hold 0 [get_cells                                \
-u_ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i/clk_gate_rdata_q_reg/main_gate]

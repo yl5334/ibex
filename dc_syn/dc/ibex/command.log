@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP5-1 for linux64 -- Mar 08, 2019
-#@ # Date:   Sat May  4 23:39:32 2024
-#@ # Run by: yx2821@cadpc36
+#@ # Date:   Mon May  6 19:09:43 2024
+#@ # Run by: yl5334@cadpc21
 #@ 
 
 source /tools/synopsys/syn/O-2018.06-SP5-1/admin/setup/.synopsys_dc.setup
@@ -6632,8 +6632,8 @@ source /tools/synopsys/syn/O-2018.06-SP5-1/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /tools/synopsys/syn/O-2018.06-SP5-1/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /homes/user/stud/fall23/yx2821/6321-ibex/ibex-master/dc_syn/dc/ibex/ibex.tcl
-#@ # -- Starting source /homes/user/stud/fall23/yx2821/6321-ibex/ibex-master/dc_syn/dc/ibex/ibex.tcl
+source -echo -verbose /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
+#@ # -- Starting source /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
 
 #@ #########################################
 #@ # TCL script for Design Compiler        #
@@ -6645,7 +6645,7 @@ source -echo -verbose /homes/user/stud/fall23/yx2821/6321-ibex/ibex-master/dc_sy
 #@ ##################################################
 #@ 
 #@ # Set the top_level name
-#@ set top_level ibex_system
+#@ set top_level ibex_top
 #@ 
 #@ # In this file, libray path and libraries which are used are defined
 #@ source -verbose "../common_scripts/common.tcl" 
@@ -6856,31 +6856,22 @@ source -echo -verbose /homes/user/stud/fall23/yx2821/6321-ibex/ibex-master/dc_sy
 #@ 
 #@ set power_enable_datapath_gating true
 #@ 
-#@ set_scan_configuration -style multiplexed_flip_flop
 #@ 
-#@ compile -scan
+#@ #set_scan_configuration -style multiplexed_flip_flop
 #@ 
-#@ source DFT.tcl
-#@ # -- Starting source DFT.tcl
-
-#@ #set_dft_signal -view spec -type ScanDataIn -port SI
-#@ #set_dft_signal -view spec -type ScanDataOut -port test_so
-#@ set_dft_signal -view spec -type ScanEnable -port scan_rst_ni 
-#@ #set_scan_path chain1 -view existing_dft -scan_data_in test_si \-scan_data_out test_so
-#@ set_dft_signal -view existing_dft -view existing_dft -type ScanClock -port clk_i -timing [list 40 60]
-#@ set_dft_signal -view existing_dft -type Reset -port rst_ni -active_state 0
-#@ # -- End source DFT.tcl
-
+#@ #compile -scan
 #@ 
-#@ create_test_protocol
+#@ #source DFT.tcl
 #@ 
-#@ dft_drc
+#@ #create_test_protocol
 #@ 
-#@ set_scan_configuration -chain_count 4
+#@ #dft_drc
 #@ 
-#@ preview_dft
+#@ #set_scan_configuration -chain_count 4
 #@ 
-#@ insert_dft
+#@ #preview_dft
+#@ 
+#@ #insert_dft
 #@ 
 #@ 
 #@ 
@@ -43333,5 +43324,5 @@ source -echo -verbose /homes/user/stud/fall23/yx2821/6321-ibex/ibex-master/dc_sy
 
 #@ # Finish synthesis
 #@ #quit
-#@ # -- End source /homes/user/stud/fall23/yx2821/6321-ibex/ibex-master/dc_syn/dc/ibex/ibex.tcl
+#@ # -- End source /homes/user/stud/fall23/yl5334/ibex_/ibex/dc_syn/dc/ibex/ibex.tcl
 

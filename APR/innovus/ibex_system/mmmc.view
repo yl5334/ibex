@@ -19,7 +19,7 @@ create_library_set \
 
 create_constraint_mode \
 -name typical_constraint \
--sdc_files {../../../dc_syn/dc/ibex_system/ibex_system.syn.sdc}
+-sdc_files {../../../dc_syn/dc/ibex/ibex_top.syn.sdc}
 
 create_delay_corner \
 -name typical_dly \

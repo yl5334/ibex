@@ -24,10 +24,10 @@ init_design
 ##################################################
 
 set std_cell_height 3.6
-set core_width 738
+set core_width [expr 205*$std_cell_height]
 # core_height should be a multiple of the std_cell_height
 # Need to iterate the core width and height to make the density close to 0.7
-set core_height [expr 205*$std_cell_height]
+set core_height [expr 150*$std_cell_height]
 set ring_left_width 2.4
 set ring_right_width 2.4
 set ring_top_width 2.4
@@ -96,6 +96,7 @@ redraw
 
 # Create power stripes within the specified area
 ### TODO: You have to change below considering your floorplan
+
 addStripe -block_ring_top_layer_limit MG \
           -block_ring_bottom_layer_limit M3 \
           -padcore_ring_top_layer_limit MG \
@@ -108,7 +109,7 @@ addStripe -block_ring_top_layer_limit MG \
           -spacing 1 \
           -nets {VDD VSS} \
           -direction vertical \
-          -area {5 5 748 748}
+          -area {5 5 748 550}
 
 addStripe -block_ring_top_layer_limit MG \
           -block_ring_bottom_layer_limit M3 \
@@ -122,7 +123,7 @@ addStripe -block_ring_top_layer_limit MG \
           -spacing 1 \
           -nets {VDD VSS} \
           -direction horizontal \
-          -area {5 5 748 748}
+          -area {5 5 748 550}
 
 sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
 

@@ -8,7 +8,7 @@
 ##################################################
 
 # Set the top_level name
-set top_level ibex_system
+set top_level ibex_top
 
 # In this file, libray path and libraries which are used are defined
 source -verbose "../common_scripts/common.tcl" 
@@ -99,21 +99,22 @@ set_clock_gating_style  -num_stages 4 -setup 0.5
 
 set power_enable_datapath_gating true
 
-set_scan_configuration -style multiplexed_flip_flop
 
-compile -scan
+#set_scan_configuration -style multiplexed_flip_flop
 
-source DFT.tcl
+#compile -scan
 
-create_test_protocol
+#source DFT.tcl
 
-dft_drc
+#create_test_protocol
 
-set_scan_configuration -chain_count 4
+#dft_drc
 
-preview_dft
+#set_scan_configuration -chain_count 4
 
-insert_dft
+#preview_dft
+
+#insert_dft
 
 
 
