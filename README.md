@@ -4,7 +4,7 @@ This is the project of IBEX physical design, we will do the synthesis and apr to
 Synthesis flow: dc_syn
 note: Please change the file name of your file to be ibex_, or change the absolu path to relative path in the dc_syn/common_scripts "search path"
 
-Contributor: Yuqi Lin, Zhili Yan, Ken Yu, Yanlin Mao, Yuxiang Xia, Rui Qing, Jiamiao He, Jeff
+Contributor: Yuqi Lin, Zhili Yan, Hongkuan Yu, Yanlin Mao, Yuxiang Xia, Rui Qing, Jiamiao He, Jeff
 
 ![image](https://github.com/user-attachments/assets/322c0418-08ad-42ca-bb68-58efdef847c9)
 
